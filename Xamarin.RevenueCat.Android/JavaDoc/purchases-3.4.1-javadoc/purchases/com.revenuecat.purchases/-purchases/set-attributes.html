@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Purchases.setAttributes - purchases</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">purchases</a>&nbsp;/&nbsp;<a href="../index.html">com.revenuecat.purchases</a>&nbsp;/&nbsp;<a href="index.html">Purchases</a>&nbsp;/&nbsp;<a href="./set-attributes.html">setAttributes</a><br/>
+<br/>
+<h1>setAttributes</h1>
+<a name="com.revenuecat.purchases.Purchases$setAttributes(kotlin.collections.Map((kotlin.String, kotlin.String)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">setAttributes</span><span class="symbol">(</span><span class="identifier" id="com.revenuecat.purchases.Purchases$setAttributes(kotlin.collections.Map((kotlin.String, kotlin.String)))/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Subscriber attributes are useful for storing additional, structured information on a user.
+Since attributes are writable using a public key they should not be used for
+managing secure or sensitive information such as subscription status, coins, etc.</p>
+<p>Key names starting with "$" are reserved names used by RevenueCat. For a full list of key
+restrictions refer to our guide: https://docs.revenuecat.com/docs/subscriber-attributes</p>
+<h3>Parameters</h3>
+<p><a name="attributes"></a>
+<code>attributes</code> - Map of attributes by key. Set the value as null to delete an attribute.</p>
+</BODY>
+</HTML>
