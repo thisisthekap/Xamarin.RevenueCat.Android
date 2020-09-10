@@ -18,8 +18,8 @@ steps:
     echo "##vso[build.updatebuildnumber]xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
 
 - bash: |
-    if [[ "$(Build.SourceBranchName)" != *"$(bindingsVersion) ]]; then
-      echo mismatch between tag $(Build.SourceBranchName) and nuget version $(bindingsVersion)
+    if [[ "$(Build.SourceBranchName)" != *"$(bindingsVersion)" ]]; then
+      echo "mismatch between tag $(Build.SourceBranchName) and nuget version $(bindingsVersion)"
       exit 1
     fi
 
