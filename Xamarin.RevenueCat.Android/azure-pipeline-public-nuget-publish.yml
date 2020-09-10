@@ -18,7 +18,7 @@ steps:
     msbuild /p:Configuration=Release
 
 - bash: |
-    dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/*.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
+    dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
 
 - task: GitHubRelease@1
   inputs:
@@ -29,6 +29,6 @@ steps:
     tagSource: 'userSpecifiedTag'
     tag: '$(Build.SourceBranchName)'
     title: 'Xamarin.RevenueCat.Android $(bindingsVersion)'
-    assets: 'Xamarin.RevenueCat.Android/nugetoutput/*.nupkg'
+    assets: 'Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'issueBased'
