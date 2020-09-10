@@ -17,10 +17,6 @@ steps:
     cd Xamarin.RevenueCat.Android
     msbuild /p:Configuration=Release
 
-- task: NuGetAuthenticate@0
-  inputs:
-    nuGetServiceConnections: 'nuget.org thisisthekap connection'
-
 - bash: |
     dotnet nuget push foo.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
 
