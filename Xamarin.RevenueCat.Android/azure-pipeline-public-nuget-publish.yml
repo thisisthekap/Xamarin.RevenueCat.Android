@@ -15,7 +15,7 @@ steps:
 
 - bash: |
     pwd
-    find .
+    find $(Build.ArtifactStagingDirectory)
 
 - bash: |
     cd Xamarin.RevenueCat.Android
@@ -23,7 +23,7 @@ steps:
 
 - bash: |
     pwd
-    find .
+    find $(Build.ArtifactStagingDirectory)
 
 - bash: |
     dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
