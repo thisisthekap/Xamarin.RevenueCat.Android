@@ -1,8 +1,8 @@
-pool:
-  vmImage: 'macOS-10.15'
-
 trigger:
   - release-v*
+
+pool:
+  vmImage: 'macOS-10.15'
 
 steps:
 - bash: |
