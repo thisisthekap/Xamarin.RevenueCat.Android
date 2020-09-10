@@ -14,8 +14,16 @@ steps:
     echo "##vso[build.updatebuildnumber]xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
 
 - bash: |
+    pwd
+    find .
+
+- bash: |
     cd Xamarin.RevenueCat.Android
     msbuild /p:Configuration=Release
+
+- bash: |
+    pwd
+    find .
 
 - bash: |
     dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
