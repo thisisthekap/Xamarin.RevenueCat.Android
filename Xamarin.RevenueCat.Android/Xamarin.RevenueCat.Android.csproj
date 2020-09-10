@@ -3,11 +3,12 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>1.0.2</Version>
+        <Version>1.0.5</Version>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -56,6 +57,7 @@
     <ItemGroup>
         <None Include="Jars\AboutJars.txt" />
         <None Include="Additions\AboutAdditions.txt" />
+        <None Include="LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
     </ItemGroup>
     <ItemGroup>
         <TransformFile Include="Transforms\Metadata.xml" />
