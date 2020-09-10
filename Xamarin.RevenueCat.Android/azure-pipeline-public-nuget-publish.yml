@@ -10,12 +10,9 @@ steps:
 - bash: |
     echo "##vso[build.updatebuildnumber]xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
 
-- task: MSBuild@1
-  inputs:
-    solution: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
-    msbuildVersion: '16.0'
-    msbuildArchitecture: 'x64'
-    configuration: 'Release'
+- bash: |
+    cd Xamarin.RevenueCat.Android
+    msbuild /p:Configuration=Release
 
 - task: NuGetAuthenticate@0
   inputs:
