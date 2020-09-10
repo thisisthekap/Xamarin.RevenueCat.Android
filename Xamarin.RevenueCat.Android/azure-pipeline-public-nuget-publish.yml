@@ -11,7 +11,7 @@ steps:
 - bash: |
     git checkout $(Build.SourceBranchName)
     git tag release-v$(bindingsVersion)
-    git push release-v$(bindingsVersion)
+    git push origin release-v$(bindingsVersion)
 
 - task: MSBuild@1
   inputs:
