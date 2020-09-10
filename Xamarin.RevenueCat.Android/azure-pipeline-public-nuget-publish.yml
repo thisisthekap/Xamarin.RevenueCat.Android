@@ -24,13 +24,6 @@ steps:
 - bash: |
     dotnet nuget push foo.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
 
-- task: NuGetCommand@2
-  inputs:
-    command: 'push'
-    packagesToPush: 'Xamarin.RevenueCat.Android/nugetoutput/*.nupkg;!Xamarin.RevenueCat.Android/nugetoutput/*.symbols.nupkg'
-    nuGetFeedType: 'external'
-    publishFeedCredentials: 'nuget.org thisisthekap connection'
-
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'github.com_thisisthekap'
