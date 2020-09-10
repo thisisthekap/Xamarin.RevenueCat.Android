@@ -15,6 +15,7 @@ steps:
     solution: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
     msbuildVersion: '16.0'
     msbuildArchitecture: 'x64'
+    configuration: 'Release'
 
 - task: NuGetAuthenticate@0
   inputs:
