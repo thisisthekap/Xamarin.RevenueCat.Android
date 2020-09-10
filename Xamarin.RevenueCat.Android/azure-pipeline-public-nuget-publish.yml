@@ -19,7 +19,8 @@ steps:
 
 - bash: |
     if [[ "$(Build.SourceBranchName)" != *"$(bindingsVersion) ]]; then
-      echo "mismatch between tag $(Build.SourceBranchName) and nuget version $(bindingsVersion)"
+      echo mismatch between tag $(Build.SourceBranchName) and nuget version $(bindingsVersion)
+      exit 1
     fi
 
 - bash: |
