@@ -6,6 +6,9 @@ trigger:
 pool:
   vmImage: 'macOS-10.15'
 
+variables:
+  - group: nuget.org
+
 steps:
 - bash: |
     echo "##vso[build.updatebuildnumber]xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
@@ -17,6 +20,9 @@ steps:
 - task: NuGetAuthenticate@0
   inputs:
     nuGetServiceConnections: 'nuget.org thisisthekap connection'
+
+- bash: |
+    dotnet nuget push foo.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
 
 - task: NuGetCommand@2
   inputs:
