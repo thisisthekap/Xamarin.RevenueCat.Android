@@ -19,12 +19,16 @@ steps:
 
 - bash: |
     cd Xamarin.RevenueCat.Android
+    msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
 
 - bash: |
     pwd
     find $(Build.ArtifactStagingDirectory)
+
+- bash: |
+    asdf
 
 - bash: |
     dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
