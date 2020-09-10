@@ -3,11 +3,10 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>1.1.13</Version>
+        <Version>1.1.14</Version>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageLicensePath>..\..\LICENSE.txt</PackageLicensePath>
     </PropertyGroup>
     <PropertyGroup>
