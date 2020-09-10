@@ -18,7 +18,7 @@ steps:
     msbuild /p:Configuration=Release
 
 - bash: |
-    dotnet nuget push foo.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
+    dotnet nuget push ./Xamarin.RevenueCat.Android/nugetoutput/*.nupkg -k $(nugetOrgApiKey) -s https://api.nuget.org/v3/index.json
 
 - task: GitHubRelease@1
   inputs:
