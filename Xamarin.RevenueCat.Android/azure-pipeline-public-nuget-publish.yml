@@ -1,5 +1,7 @@
 trigger:
-  - refs/tags/release-v*
+  tags:
+    include:
+      - release-v*
 
 pool:
   vmImage: 'macOS-10.15'
