@@ -9,6 +9,10 @@ steps:
     echo "##vso[build.updatebuildnumber]xamarin-revenuecat-android-$(bindingsVersion)-$(Build.BuildId)"
 
 - bash: |
+    echo $BUILD_REQUESTEDFOREMAIL
+    echo $BUILD_REQUESTEDFOR
+
+- bash: |
     git checkout $(Build.SourceBranchName)
     git tag release-v$(bindingsVersion)
     git push origin release-v$(bindingsVersion)
