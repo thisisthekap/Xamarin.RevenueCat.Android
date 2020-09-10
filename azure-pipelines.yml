@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- br_public_nuget_publish
+
+pool:
+  vmImage: 'macOS-10.15'
+
+steps:
+- task: MSBuild@1
+  inputs:
+    solution: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
+    msbuildVersion: '16.0'
+    msbuildArchitecture: 'x64'
+
+- task: NuGetAuthenticate@0
+  inputs:
+    nuGetServiceConnections: 'nuget.org thisisthekap connection'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: 'Xamarin.RevenueCat.Android/nugetoutput/*.nupkg;!Xamarin.RevenueCat.Android/nugetoutput/*.symbols.nupkg'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'nuget.org thisisthekap connection'
