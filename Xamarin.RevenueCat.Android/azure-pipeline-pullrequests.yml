@@ -1,5 +1,4 @@
-trigger:
-  pr:
+pr:
   - master
 
 pool:
