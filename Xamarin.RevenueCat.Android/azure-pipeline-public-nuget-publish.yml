@@ -2,8 +2,8 @@ trigger:
   branches:
     include:
       - refs/tags/release-v*
-    exclude:
-      - '*'
+
+pr: none
 
 pool:
   vmImage: 'macOS-10.15'
