@@ -1,39 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-    <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='GetSkusResponseListener']/method[@name='onError']"
-        name="argsType">SkuResponseErrorEventArgs</attr>
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='GetSkusResponseListener']/method[@name='onReceived']"
-        name="argsType">SkuResponseReceivedEventArgs</attr>
 
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='MakePurchaseListener']/method[@name='onError']"
-        name="argsType">MakePurchaseErrorEventArgs</attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onError']" name="argsType">ReceivePurchaseInfoErrorEventArgs</attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onReceived']" name="argsType">ReceivePurchaseInfoReceivedEventArgs</attr>
 
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='ReceiveOfferingsListener']/method[@name='onError']"
-        name="argsType">ReceiveOfferingsErrorEventArgs</attr>
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='ReceiveOfferingsListener']/method[@name='onReceived']"
-        name="argsType">ReceiveOfferingsReceivedEventArgs</attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onError']" name="argsType">ReceiveOfferingsErrorEventArgs</attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onReceived']" name="argsType">ReceiveOfferingsReceivedEventArgs</attr>
 
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='ReceivePurchaseInfoListener']/method[@name='onError']"
-        name="argsType">ReceivePurchaseInfoErrorEventArgs</attr>
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='ReceivePurchaseInfoListener']/method[@name='onReceived']"
-        name="argsType">ReceivePurchaseInfoReceivedEventArgs</attr>
-        
-    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/
-        interface[@name='UpdatePurchaseInfoListener']/method[@name='onReceived']"
-        name="argsType">UpdatePurchaseInfoReceivedEventArgs</attr>
-    
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='MakePurchaseListener']/method[@name='onError']" name="argsType">MakePurchaseErrorEventArgs</attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='MakePurchaseListener']/method[@name='onCompleted']" name="argsType">MakePurchaseCompletedEventArgs</attr>
+
+    <remove-node path="/api/package[starts-with(@name,'com.android.billingclient')]" />
+
 </metadata>
