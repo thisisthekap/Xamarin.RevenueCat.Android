@@ -1,0 +1,17 @@
+trigger:
+  pr:
+  - master
+
+pool:
+  vmImage: 'macOS-10.15'
+
+steps:
+
+- bash: |
+    echo "##vso[build.updatebuildnumber]pr-xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
+
+- bash: |
+    cd Xamarin.RevenueCat.Android
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
