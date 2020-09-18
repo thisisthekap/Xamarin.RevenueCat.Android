@@ -2,9 +2,9 @@
 
 Xamarin.Android Bindings for RevenueCat ([Website](https://www.revenuecat.com/), [MVN](https://mvnrepository.com/artifact/com.revenuecat.purchases/purchases)).
 
-## Production Build Status
+## NuGet Feed
 
-[![Build Status](https://funmusic.visualstudio.com/Xamarin%20RevenueCat%20Bindings/_apis/build/status/Production-Xamarin.RevenueCat.Android?branchName=refs%2Fpull%2F7%2Fmerge)](https://funmusic.visualstudio.com/Xamarin%20RevenueCat%20Bindings/_build/latest?definitionId=148&branchName=refs%2Fpull%2F7%2Fmerge)
+[https://www.nuget.org/packages/Xamarin.RevenueCat.Android/](https://www.nuget.org/packages/Xamarin.RevenueCat.Android/)
 
 ## Versioning Scheme
 
