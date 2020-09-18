@@ -56,7 +56,6 @@
     <ItemGroup>
         <None Include="Jars\AboutJars.txt" />
         <None Include="Additions\AboutAdditions.txt" />
-        <None Include="LICENSE.txt" />
     </ItemGroup>
     <ItemGroup>
         <TransformFile Include="Transforms\Metadata.xml" />
