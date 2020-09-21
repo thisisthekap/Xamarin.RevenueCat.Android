@@ -18,5 +18,4 @@ steps:
 - task: XamarinAndroid@1
   inputs:
     projectFile: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
-    msbuildArchitectureOption: 'x64'
-    jdkOption: 'JDKVersion'
+    createAppPackage: true
