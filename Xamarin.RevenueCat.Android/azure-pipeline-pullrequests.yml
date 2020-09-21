@@ -17,6 +17,6 @@ steps:
 
 - task: XamarinAndroid@1
   inputs:
-    projectFile: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
+    projectFile: 'Xamarin.RevenueCat.Android.UsageChecker/Xamarin.RevenueCat.Android.UsageChecker.csproj'
     msbuildArguments: '/t:SignAndroidPackage /p:AndroidKeyStore=true /p:AndroidSigningKeyStore=usagechecker.jks /p:AndroidSigningKeyAlias=usagechecker /p:AndroidSigningKeyPass=usagechecker /p:AndroidSigningStorePass=usagechecker'
     createAppPackage: true
