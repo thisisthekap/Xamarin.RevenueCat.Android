@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Android;
@@ -11,7 +9,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
     [TestFixture]
     public class Tests
     {
-        AndroidApp app;
+        private AndroidApp app;
 
         [SetUp]
         public void BeforeEachTest()
@@ -27,9 +25,11 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
         }
 
         [Test]
-        public void HelloWorldPresent()
+        public void CheckRevenueCatVersion()
         {
-            app.WaitForElement(c => c.Text("Hello World!"));
+            AppResult versionElement = app.WaitForElement(c => c.Id("txtRevenueCatVersion")).First();
+            Assert.AreEqual("RevenueCat 3.4.1", versionElement.Text);
+            app.Screenshot("RevenueCat Version");
         }
     }
 }

@@ -4,8 +4,9 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
+using Android.Widget;
 using AndroidX.AppCompat.App;
-using AndroidX.AppCompat.Widget;
+using Com.Revenuecat.Purchases;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
 using static Android.Views.View;
@@ -21,14 +22,19 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
             Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            Toolbar toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            AndroidX.AppCompat.Widget.Toolbar toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
 
-//            Purchases.DebugLogsEnabled = true;
-//            Purchases.Configure(this, "apikey");
+            Purchases.DebugLogsEnabled = true;
+            Purchases.Configure(this, "apikey");
+            string revenueCatVersion = Purchases.FrameworkVersion;
+
+            var txtRevenueCatVersion = FindViewById<TextView>(Resource.Id.txtRevenueCatVersion);
+
+            txtRevenueCatVersion.Text = "RevenueCat " + revenueCatVersion;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
