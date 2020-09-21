@@ -17,8 +17,6 @@ The versioning scheme of `Xamarin.RevenueCat.Android` is derived from the versio
 | 3.4.1 | 3.4.1.1 | First version of bindings for 3.4.1 |
 | 3.4.1 | 3.4.1.17 | Bindings for 3.4.1 containing fixes |
 
-The initial version of `Xamarin.RevenueCat.Android` mapping `com.revenuecat.purchases:purchases` `3.4.1` is 
-
 ## Trouble Shooting
 
 If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics`, consider to explicitly reference the transitive dependencies of `Xamarin.RevenueCat.Android`:
@@ -37,4 +35,4 @@ If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution 
 ## License
 
 The license for this repository is specified in 
-[LICENSE.md](Xamarin.RevenueCat.Android/Xamarin.Android/LICENSE.md)
+[LICENSE.txt](LICENSE.txt)
