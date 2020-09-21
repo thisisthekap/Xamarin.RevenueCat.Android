@@ -15,6 +15,10 @@ steps:
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
 
+- bash: |
+    monoVersion=6_10_0
+    sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh ${monoVersion}
+
 - task: XamarinAndroid@1
   inputs:
     projectFile: 'Xamarin.RevenueCat.Android.UsageChecker/Xamarin.RevenueCat.Android.UsageChecker.csproj'
