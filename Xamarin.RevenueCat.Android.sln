@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.808.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android", "Xamarin.RevenueCat.Android\Xamarin.RevenueCat.Android.csproj", "{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.UsageChecker", "Xamarin.RevenueCat.Android.UsageChecker\Xamarin.RevenueCat.Android.UsageChecker.csproj", "{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.UsageChecker.UITests", "Xamarin.RevenueCat.Android.UsageChecker.UITests\Xamarin.RevenueCat.Android.UsageChecker.UITests.csproj", "{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
