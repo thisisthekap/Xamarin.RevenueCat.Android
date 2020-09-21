@@ -14,3 +14,9 @@ steps:
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
+
+- task: XamarinAndroid@1
+  inputs:
+    projectFile: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
+    msbuildArchitectureOption: 'x64'
+    jdkOption: 'JDKVersion'
