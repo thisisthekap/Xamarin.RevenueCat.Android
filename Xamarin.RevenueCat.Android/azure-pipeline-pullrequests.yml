@@ -18,4 +18,3 @@ steps:
 - task: XamarinAndroid@1
   inputs:
     projectFile: 'Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj'
-    createAppPackage: true
