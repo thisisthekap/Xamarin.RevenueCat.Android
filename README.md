@@ -32,6 +32,10 @@ If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution 
 * Xamarin.Android.Google.BillingClient
 	* Version >= 3.0.0
 
+## Xamarin.RevenueCat.Android.UsageChecker.UITests
+
+Use this project to briefly check if the bindings are working. Execute the Project in Visual Studio to execute the UI tests.
+
 ## License
 
 The license for this repository is specified in 
