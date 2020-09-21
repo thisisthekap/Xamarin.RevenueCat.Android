@@ -8,18 +8,21 @@ steps:
 
 - bash: |
     echo "##vso[build.updatebuildnumber]pullrequests-xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
+  displayName: Set Build Number
 
 - bash: |
     cd Xamarin.RevenueCat.Android
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
+  displayName: Build Release Nuget
 
 - bash: |
-    monoVersion=6_10_0
-    sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh ${monoVersion}
+    msbuild /t:Restore
+  displayName: Restore Solution
 
 - task: XamarinAndroid@1
+  displayName: Build UsageChecker
   inputs:
     projectFile: 'Xamarin.RevenueCat.Android.UsageChecker/Xamarin.RevenueCat.Android.UsageChecker.csproj'
     msbuildArguments: '/t:SignAndroidPackage /p:AndroidKeyStore=true /p:AndroidSigningKeyStore=usagechecker.jks /p:AndroidSigningKeyAlias=usagechecker /p:AndroidSigningKeyPass=usagechecker /p:AndroidSigningStorePass=usagechecker'
