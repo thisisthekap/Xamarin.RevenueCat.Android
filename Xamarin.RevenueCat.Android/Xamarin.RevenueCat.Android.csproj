@@ -3,7 +3,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>3.4.1.4-beta1</Version>
+        <Version>3.5.0.1</Version>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
@@ -68,8 +68,8 @@
         <Folder Include="JavaDoc\" />
     </ItemGroup>
     <ItemGroup>
-        <LibraryProjectZip Include="Jars\purchases-3.4.1.aar" />
-        <JavaDocJar Include="JavaDoc\purchases-3.4.1-javadoc.jar" />
+        <LibraryProjectZip Include="Jars\purchases-3.5.0.aar" />
+        <JavaDocJar Include="JavaDoc\purchases-3.5.0-javadoc.jar" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.7.0" />
@@ -79,6 +79,9 @@
         <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="3.0.0" />
         <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime" Version="1.3.72" />
         <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.3.72" />
+        <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime">
+          <Version>1.3.72</Version>
+        </PackageReference>
     </ItemGroup>
 
     <!-- Can be removed as soon as https://github.com/xamarin/xamarin-android/pull/4406 is released -->

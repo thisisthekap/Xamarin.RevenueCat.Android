@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.UsageChecker.UITests", "Xamarin.RevenueCat.Android.UsageChecker.UITests\Xamarin.RevenueCat.Android.UsageChecker.UITests.csproj", "{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purchases-core-common", "purchases-core-common\purchases-core-common.csproj", "{56202E40-092B-4752-966C-047F7CA661D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purchases-core-feature-identity", "purchases-core-feature-identity\purchases-core-feature-identity.csproj", "{12B48801-F62F-4F34-981B-5F73E4B55BB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purchases-core-feature-subscriber-attributes", "purchases-core-feature-subscriber-attributes\purchases-core-feature-subscriber-attributes.csproj", "{9E1FBC3B-2FA2-4D2B-8DD1-1CBD612C08F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purchases-core-public", "purchases-core-public\purchases-core-public.csproj", "{11250A32-E4DF-40A2-BD62-46BA79E56FB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "purchases-core-utils", "purchases-core-utils\purchases-core-utils.csproj", "{AA9790FF-736E-4B52-842E-10FB412B5EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +37,26 @@ Global
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56202E40-092B-4752-966C-047F7CA661D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56202E40-092B-4752-966C-047F7CA661D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56202E40-092B-4752-966C-047F7CA661D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56202E40-092B-4752-966C-047F7CA661D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B48801-F62F-4F34-981B-5F73E4B55BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B48801-F62F-4F34-981B-5F73E4B55BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B48801-F62F-4F34-981B-5F73E4B55BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B48801-F62F-4F34-981B-5F73E4B55BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1FBC3B-2FA2-4D2B-8DD1-1CBD612C08F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1FBC3B-2FA2-4D2B-8DD1-1CBD612C08F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1FBC3B-2FA2-4D2B-8DD1-1CBD612C08F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1FBC3B-2FA2-4D2B-8DD1-1CBD612C08F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11250A32-E4DF-40A2-BD62-46BA79E56FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11250A32-E4DF-40A2-BD62-46BA79E56FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11250A32-E4DF-40A2-BD62-46BA79E56FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11250A32-E4DF-40A2-BD62-46BA79E56FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9790FF-736E-4B52-842E-10FB412B5EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9790FF-736E-4B52-842E-10FB412B5EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9790FF-736E-4B52-842E-10FB412B5EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9790FF-736E-4B52-842E-10FB412B5EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
