@@ -31,10 +31,22 @@ If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution 
 	* Version >= 1.1.0
 * Xamarin.Android.Google.BillingClient
 	* Version >= 3.0.0
+* Karamunting.Kotlin.Android.Extensions.Runtime
+	* Version >= 1.3.72
 
 ## Xamarin.RevenueCat.Android.UsageChecker.UITests
 
 Use this project to briefly check if the bindings are working. Execute the Project in Visual Studio to execute the UI tests.
+
+## List runtime dependencies of `com.revenuecat.purchases:purchases`
+
+When creating the bindings for a new version, you might need to know the runtime classpath dependencies of `com.revenuecat.purchases:purchases`.
+
+Within the checked out RevenueCat repository, this command may be used to accomplish this task:
+
+`‌gradle dependencies --configuration releaseRuntimeClasspath`
+
+Optionally add the `--scan` option to the command to view a "web-based, searchable dependency report".
 
 ## License
 
