@@ -3,7 +3,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>3.4.1.3</Version>
+        <Version>3.4.1.4-beta1</Version>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
@@ -73,10 +73,11 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.7.0" />
-        <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="3.0.0" />
         <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.1.0" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.1.0" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Extensions" Version="2.1.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.1.0" />
+        <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="3.0.0" />
+        <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime" Version="1.3.72" />
         <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.3.72" />
     </ItemGroup>
 
