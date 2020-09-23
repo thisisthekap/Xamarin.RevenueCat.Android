@@ -31,6 +31,8 @@ If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution 
 	* Version >= 1.1.0
 * Xamarin.Android.Google.BillingClient
 	* Version >= 3.0.0
+* Karamunting.Kotlin.Android.Extensions.Runtime
+	* Version >= 1.3.72
 
 ## Xamarin.RevenueCat.Android.UsageChecker.UITests
 
