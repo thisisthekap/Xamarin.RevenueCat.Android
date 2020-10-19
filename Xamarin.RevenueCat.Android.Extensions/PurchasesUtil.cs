@@ -8,11 +8,11 @@ namespace Xamarin.RevenueCat.Android.Extensions
 {
     public static class PurchasesUtil
     {
-        public static Task<bool> IsBillingSupportedAsync(Context context, CancellationToken cancellationToken = default)
+        public static async  Task<bool> IsBillingSupportedAsync(Context context, CancellationToken cancellationToken = default)
         {
-            var delegatingCallback = new DelegatingCallback<bool>(cancellationToken);
+            var delegatingCallback = new DelegatingCallback<Java.Lang.Boolean>(cancellationToken);
             Purchases.IsBillingSupported(context, delegatingCallback);
-            return delegatingCallback.Task;
+            return (await delegatingCallback.Task).BooleanValue();
         }
     }
 }
