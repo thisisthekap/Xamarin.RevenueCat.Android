@@ -4,11 +4,21 @@ Xamarin.Android Bindings for RevenueCat ([Website](https://www.revenuecat.com/),
 
 ## NuGet Feed
 
+### Xamarin.RevenueCat.Android
+
+This nuget package consists of the actual Xamarin.Android bindings.
+
 [https://www.nuget.org/packages/Xamarin.RevenueCat.Android/](https://www.nuget.org/packages/Xamarin.RevenueCat.Android/)
+
+### Xamarin.RevenueCat.Android.Extensions
+
+This nuget package contains convenience methods to be able to use things like async/await when working with Xamarin.RevenueCat.Android.
+
+[https://www.nuget.org/packages/Xamarin.RevenueCat.Android.Extensions/](https://www.nuget.org/packages/Xamarin.RevenueCat.Android.Extensions/)
 
 ## Versioning Scheme
 
-The versioning scheme of `Xamarin.RevenueCat.Android` is derived from the versioning of `com.revenuecat.purchases:purchases`.
+The versioning scheme of `Xamarin.RevenueCat.Android` (and `Xamarin.RevenueCat.Android.Extensions`) is derived from the versioning of `com.revenuecat.purchases:purchases`.
 
 ### Example:
 
