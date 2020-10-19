@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.UsageChecker.UITests", "Xamarin.RevenueCat.Android.UsageChecker.UITests\Xamarin.RevenueCat.Android.UsageChecker.UITests.csproj", "{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.RevenueCat.Android.Extensions", "Xamarin.RevenueCat.Android.Extensions\Xamarin.RevenueCat.Android.Extensions.csproj", "{FA4AC6AA-946D-4991-B546-43DDD9811B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18F7C05F-DDCB-450A-B037-01FB6D1F4CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4AC6AA-946D-4991-B546-43DDD9811B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4AC6AA-946D-4991-B546-43DDD9811B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4AC6AA-946D-4991-B546-43DDD9811B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4AC6AA-946D-4991-B546-43DDD9811B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

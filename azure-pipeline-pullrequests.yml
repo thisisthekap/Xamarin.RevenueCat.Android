@@ -15,7 +15,16 @@ steps:
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
-  displayName: Build Release Nuget
+    cd ..
+  displayName: "Bindings: Build Release Nuget"
+
+- bash: |
+    cd Xamarin.RevenueCat.Android.Extensions
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+    cd ..
+  displayName: "Extensions: Build Release Nuget"
 
 - bash: |
     msbuild /t:Restore

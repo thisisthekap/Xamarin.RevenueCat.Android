@@ -3,7 +3,8 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>3.4.1.5</Version>
+        <Version>3.4.1.9</Version>
+        <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
