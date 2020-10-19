@@ -26,7 +26,7 @@ steps:
     fi
 
 - bash: |
-    cd Xamarin.RevenueCat.Android
+    cd Xamarin.RevenueCat.Android.Extensions
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
