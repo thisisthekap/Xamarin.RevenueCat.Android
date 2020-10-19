@@ -31,5 +31,13 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
             Assert.AreEqual("RevenueCat 3.4.1", versionElement.Text);
             app.Screenshot("RevenueCat Version");
         }
+
+        [Test]
+        public void CheckBillingSupported()
+        {
+            AppResult billingSupportedElement = app.WaitForElement(c => c.Id("txtIsBillingSupported")).First();
+            Assert.AreEqual("Billing Supported: True", billingSupportedElement.Text);
+            app.Screenshot("Billing Supported");
+        }
     }
 }

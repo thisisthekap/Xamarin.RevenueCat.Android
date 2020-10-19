@@ -9,6 +9,7 @@ using AndroidX.AppCompat.App;
 using Com.Revenuecat.Purchases;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
+using Xamarin.RevenueCat.Android.Extensions;
 using static Android.Views.View;
 
 namespace Xamarin.RevenueCat.Android.UsageChecker
@@ -16,7 +17,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Essentials.Platform.Init(this, savedInstanceState);
@@ -34,7 +35,12 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 
             var txtRevenueCatVersion = FindViewById<TextView>(Resource.Id.txtRevenueCatVersion);
 
-            txtRevenueCatVersion.Text = "RevenueCat " + revenueCatVersion;
+            var txtIsBillingEnabled = FindViewById<TextView>(Resource.Id.txtIsBillingSupported);
+
+            txtRevenueCatVersion.Text = $"RevenueCat {revenueCatVersion}";
+
+            bool billingSupported = await PurchasesUtil.IsBillingSupportedAsync(this);
+            txtIsBillingEnabled.Text = $"Billing Supported: {billingSupported}";
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

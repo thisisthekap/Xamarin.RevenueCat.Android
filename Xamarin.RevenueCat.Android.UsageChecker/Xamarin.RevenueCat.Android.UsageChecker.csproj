@@ -134,6 +134,10 @@
         <Project>{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}</Project>
         <Name>Xamarin.RevenueCat.Android</Name>
       </ProjectReference>
+      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Extensions\Xamarin.RevenueCat.Android.Extensions.csproj">
+        <Project>{FA4AC6AA-946D-4991-B546-43DDD9811B7A}</Project>
+        <Name>Xamarin.RevenueCat.Android.Extensions</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
