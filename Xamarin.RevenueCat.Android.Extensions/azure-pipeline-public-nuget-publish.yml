@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-      - refs/tags/release-bindings-v*
+      - refs/tags/release-extensions-v*
 
 pr: none
 
@@ -14,10 +14,10 @@ variables:
 steps:
 
 - bash: |
-    echo "##vso[task.setvariable variable=bindingsVersion]$(cat Xamarin.RevenueCat.Android/Xamarin.RevenueCat.Android.csproj | grep '<Version>' | awk -F '[<>]' '{print $3}')"
+    echo "##vso[task.setvariable variable=bindingsVersion]$(cat Xamarin.RevenueCat.Android.Extensions/Xamarin.RevenueCat.Android.Extensions.csproj | grep '<Version>' | awk -F '[<>]' '{print $3}')"
 
 - bash: |
-    echo "##vso[build.updatebuildnumber]production-xamarin-revenuecat-android-bindings-$(Build.SourceBranchName)-$(Build.BuildId)"
+    echo "##vso[build.updatebuildnumber]production-xamarin-revenuecat-android-extensions-$(Build.SourceBranchName)-$(Build.BuildId)"
 
 - bash: |
     if [[ "$(Build.SourceBranchName)" != *"$(bindingsVersion)" ]]; then
@@ -32,7 +32,7 @@ steps:
     msbuild /t:Pack /p:Configuration=Release
 
 - bash: |
-    dotnet nuget push Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
+    dotnet nuget push Xamarin.RevenueCat.Android.Extensions/nugetoutput/Xamarin.RevenueCat.Android.Extensions.*.nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
 
 - task: GitHubRelease@1
   inputs:
@@ -42,7 +42,7 @@ steps:
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
     tag: '$(Build.SourceBranchName)'
-    title: 'Xamarin.RevenueCat.Android Bindings $(bindingsVersion)'
-    assets: 'Xamarin.RevenueCat.Android/nugetoutput/Xamarin.RevenueCat.Android.*.nupkg'
+    title: 'Xamarin.RevenueCat.Android.Extensions $(bindingsVersion)'
+    assets: 'Xamarin.RevenueCat.Android.Extensions/nugetoutput/Xamarin.RevenueCat.Android.Extensions.*.nupkg'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'issueBased'
