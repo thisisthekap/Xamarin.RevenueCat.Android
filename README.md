@@ -27,6 +27,14 @@ The versioning scheme of `Xamarin.RevenueCat.Android` (and `Xamarin.RevenueCat.A
 | 3.4.1 | 3.4.1.1 | First version of bindings for 3.4.1 |
 | 3.4.1 | 3.4.1.17 | Bindings for 3.4.1 containing fixes |
 
+## Proguard & r8
+
+When using proguard or r8, you need to specify rules to keep AndroidX specific stuff (if not done so already anyways).
+
+Furthermore, you need to add this line to your `proguard.cfg` to support RevenueCat attribution network attribution:
+
+`-keep class com.revenuecat.purchases.Purchases$AttributionNetwork { public *; }`
+
 ## Trouble Shooting
 
 If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics`, consider to explicitly reference the transitive dependencies of `Xamarin.RevenueCat.Android`:

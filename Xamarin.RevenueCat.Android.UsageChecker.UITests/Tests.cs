@@ -39,5 +39,13 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
             Assert.AreEqual("Billing Supported: True", billingSupportedElement.Text);
             app.Screenshot("Billing Supported");
         }
+
+        [Test]
+        public void CheckAdjustNetworkAttribution()
+        {
+            AppResult txtAdjustNetworkElement = app.WaitForElement(c => c.Id("txtAdjustNetwork")).First();
+            Assert.AreEqual("ADJUST", txtAdjustNetworkElement.Text);
+            app.Screenshot("Adjust Attribution Network");
+        }
     }
 }
