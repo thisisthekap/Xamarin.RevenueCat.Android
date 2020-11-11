@@ -49,6 +49,7 @@
         <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+        <AndroidLinkTool>r8</AndroidLinkTool>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
@@ -67,6 +68,7 @@
         <None Include="Resources\AboutResources.txt" />
         <None Include="Properties\AndroidManifest.xml" />
         <None Include="Assets\AboutAssets.txt" />
+        <ProguardConfiguration Include="proguard.cfg" />
     </ItemGroup>
     <ItemGroup>
         <AndroidResource Include="Resources\layout\activity_main.xml">

@@ -37,10 +37,15 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 
             var txtIsBillingEnabled = FindViewById<TextView>(Resource.Id.txtIsBillingSupported);
 
+            var txtAdjustNetwork = FindViewById<TextView>(Resource.Id.txtAdjustNetwork);
+
             txtRevenueCatVersion.Text = $"RevenueCat {revenueCatVersion}";
 
             bool billingSupported = await PurchasesUtil.IsBillingSupportedAsync(this);
             txtIsBillingEnabled.Text = $"Billing Supported: {billingSupported}";
+
+            var adjustNetwork = Purchases.AttributionNetwork.Adjust.ToString();
+            txtAdjustNetwork.Text = adjustNetwork;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
