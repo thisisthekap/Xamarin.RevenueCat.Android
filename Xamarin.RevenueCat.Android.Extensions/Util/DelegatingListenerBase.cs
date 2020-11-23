@@ -18,7 +18,7 @@ namespace Xamarin.RevenueCat.Android.Extensions.Util
 
         protected void ReportSuccess(TResult result)
         {
-            _taskCompletionSource.SetResult(result);
+            _taskCompletionSource.TrySetResult(result);
         }
 
         protected void ReportException(Exception exception)
