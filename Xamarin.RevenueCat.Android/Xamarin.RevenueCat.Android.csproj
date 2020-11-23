@@ -73,7 +73,7 @@
         <JavaDocJar Include="JavaDoc\purchases-3.4.1-javadoc.jar" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.7.0" />
+        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.8.0" />
         <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.1.0" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Extensions" Version="2.1.0" />
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.1.0" />
