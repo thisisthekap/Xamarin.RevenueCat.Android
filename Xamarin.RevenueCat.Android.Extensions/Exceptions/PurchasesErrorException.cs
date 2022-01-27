@@ -9,7 +9,7 @@ namespace Xamarin.RevenueCat.Android.Extensions.Exceptions
         public bool UserCancelled { get; }
 
         public PurchasesErrorException(PurchasesError purchasesError, bool userCancelled)
-            : base($"{purchasesError?.Message} userCancelled: {userCancelled}")
+            : base($"{purchasesError?.Message} ({purchasesError?.UnderlyingErrorMessage}) code: {purchasesError?.Code} userCancelled: {userCancelled}")
         {
             PurchasesError = purchasesError;
             UserCancelled = userCancelled;
