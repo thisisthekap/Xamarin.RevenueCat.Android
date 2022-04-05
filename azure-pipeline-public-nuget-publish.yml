@@ -96,7 +96,7 @@ steps:
   displayName: "Xamarin.RevenueCat.Android.Extensions: Build Release Nuget"
 
 - bash: |
-    ./build-nugets.sh
+    ./copy-nugets.sh
   displayName: "Copy nugets to nugetoutput folder"
 
 - bash: |

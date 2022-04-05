@@ -1,0 +1,10 @@
+Xamarin.RevenueCat.Android.Core.Strings
+Xamarin.RevenueCat.Android.Core.Utils
+Xamarin.RevenueCat.Android.Core.Public
+Xamarin.RevenueCat.Android.Core.Common
+Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes
+Xamarin.RevenueCat.Android.Core.Feature.Identity
+Xamarin.RevenueCat.Android.Store.Google
+Xamarin.RevenueCat.Android
+Xamarin.RevenueCat.Android.Store.Amazon
+Xamarin.RevenueCat.Android.Extensions
