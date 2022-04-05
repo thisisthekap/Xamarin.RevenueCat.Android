@@ -28,23 +28,15 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
         public void CheckRevenueCatVersion()
         {
             AppResult versionElement = app.WaitForElement(c => c.Id("txtRevenueCatVersion")).First();
-            Assert.AreEqual("RevenueCat 3.4.1", versionElement.Text);
+            Assert.AreEqual("RevenueCat 5.0.0", versionElement.Text);
             app.Screenshot("RevenueCat Version");
-        }
-
-        [Test]
-        public void CheckBillingSupported()
-        {
-            AppResult billingSupportedElement = app.WaitForElement(c => c.Id("txtIsBillingSupported")).First();
-            Assert.AreEqual("Billing Supported: True", billingSupportedElement.Text);
-            app.Screenshot("Billing Supported");
         }
 
         [Test]
         public void CheckAdjustNetworkAttribution()
         {
             AppResult txtAdjustNetworkElement = app.WaitForElement(c => c.Id("txtAdjustNetwork")).First();
-            Assert.AreEqual("ADJUST", txtAdjustNetworkElement.Text);
+            Assert.AreEqual("$adjustId", txtAdjustNetworkElement.Text);
             app.Screenshot("Adjust Attribution Network");
         }
     }

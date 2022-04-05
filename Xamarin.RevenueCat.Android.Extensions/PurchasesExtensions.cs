@@ -1,29 +1,36 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Android.App;
-using Android.BillingClient.Api;
 using Com.Revenuecat.Purchases;
 using Com.Revenuecat.Purchases.Interfaces;
+using Com.Revenuecat.Purchases.Models;
 using Xamarin.RevenueCat.Android.Extensions.Exceptions;
 using Xamarin.RevenueCat.Android.Extensions.Util;
-using Package = Com.Revenuecat.Purchases.Package;
 
 namespace Xamarin.RevenueCat.Android.Extensions
 {
     public static class PurchasesExtensions
     {
-        public static Task<PurchaserInfo> IdentifyAsync(this Purchases purchases, string newAppUserId,
+        public static Task<CustomerInfo> LogInAsync(this Purchases purchases, string newAppUserId,
             CancellationToken cancellationToken = default)
         {
-            var listener = new DelegatingReceivePurchaserInfoListener(cancellationToken);
-            purchases.Identify(newAppUserId, listener);
+            var listener = new DelegatingLogInCallback(cancellationToken);
+            purchases.LogIn(newAppUserId, listener);
+            return listener.Task;
+        }
+
+        public static Task<CustomerInfo> LogOutAsync(this Purchases purchases,
+            CancellationToken cancellationToken = default)
+        {
+            var listener = new DelegatingReceiveCustomerInfoCallback(cancellationToken);
+            purchases.LogOut(listener);
             return listener.Task;
         }
 
         public static Task<Offerings> GetOfferingsAsync(this Purchases purchases,
             CancellationToken cancellationToken = default)
         {
-            var listener = new DelegatingReceiveOfferingsListener(cancellationToken);
+            var listener = new DelegatingReceiveOfferingsCallback(cancellationToken);
             purchases.GetOfferings(listener);
             return listener.Task;
         }
@@ -36,42 +43,58 @@ namespace Xamarin.RevenueCat.Android.Extensions
             return listener.Task;
         }
 
-        public static Task<PurchaserInfo> RestorePurchasesAsync(this Purchases purchases,
+        public static Task<CustomerInfo> RestorePurchasesAsync(this Purchases purchases,
             CancellationToken cancellationToken = default)
         {
-            var listener = new DelegatingReceivePurchaserInfoListener(cancellationToken);
+            var listener = new DelegatingReceiveCustomerInfoCallback(cancellationToken);
             purchases.RestorePurchases(listener);
             return listener.Task;
         }
 
-        private class DelegatingReceivePurchaserInfoListener : DelegatingListenerBase<PurchaserInfo>,
-            IReceivePurchaserInfoListener
+        private class DelegatingReceiveCustomerInfoCallback : DelegatingListenerBase<CustomerInfo>,
+            IReceiveCustomerInfoCallback
         {
-            public DelegatingReceivePurchaserInfoListener(CancellationToken cancellationToken) : base(cancellationToken)
+            public DelegatingReceiveCustomerInfoCallback(CancellationToken cancellationToken) : base(cancellationToken)
             {
             }
 
-            public void OnError(PurchasesError purchasesError)
+            public void OnError(PurchasesError error)
             {
-                ReportException(new PurchasesErrorException(purchasesError, false));
+                ReportException(new PurchasesErrorException(error, false));
             }
 
-            public void OnReceived(PurchaserInfo purchaserInfo)
+            public void OnReceived(CustomerInfo customerInfo)
             {
-                ReportSuccess(purchaserInfo);
+                ReportSuccess(customerInfo);
             }
         }
 
-        private class DelegatingMakePurchaseListener : DelegatingListenerBase<PurchaseSuccessInfo>,
-            IMakePurchaseListener
+        private class DelegatingLogInCallback : DelegatingListenerBase<CustomerInfo>, ILogInCallback
+        {
+            public DelegatingLogInCallback(CancellationToken cancellationToken) : base(cancellationToken)
+            {
+            }
+
+            public void OnError(PurchasesError error)
+            {
+                ReportException(new PurchasesErrorException(error, false));
+            }
+
+            public void OnReceived(CustomerInfo customerInfo, bool created)
+            {
+                ReportSuccess(customerInfo);
+            }
+        }
+
+        private class DelegatingMakePurchaseListener : DelegatingListenerBase<PurchaseSuccessInfo>, IPurchaseCallback
         {
             public DelegatingMakePurchaseListener(CancellationToken cancellationToken) : base(cancellationToken)
             {
             }
 
-            public void OnCompleted(Purchase purchase, PurchaserInfo purchaserInfo)
+            public void OnCompleted(StoreTransaction storeTransaction, CustomerInfo customerInfo)
             {
-                ReportSuccess(new PurchaseSuccessInfo(purchase, purchaserInfo));
+                ReportSuccess(new PurchaseSuccessInfo(storeTransaction, customerInfo));
             }
 
             public void OnError(PurchasesError purchasesError, bool userCancelled)
@@ -80,9 +103,9 @@ namespace Xamarin.RevenueCat.Android.Extensions
             }
         }
 
-        private class DelegatingReceiveOfferingsListener : DelegatingListenerBase<Offerings>, IReceiveOfferingsListener
+        private class DelegatingReceiveOfferingsCallback : DelegatingListenerBase<Offerings>, IReceiveOfferingsCallback
         {
-            public DelegatingReceiveOfferingsListener(CancellationToken cancellationToken) : base(cancellationToken)
+            public DelegatingReceiveOfferingsCallback(CancellationToken cancellationToken) : base(cancellationToken)
             {
             }
 

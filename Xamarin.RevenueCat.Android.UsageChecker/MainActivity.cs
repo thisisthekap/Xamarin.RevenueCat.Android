@@ -7,9 +7,9 @@ using Android.Views;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using Com.Revenuecat.Purchases;
+using Com.Revenuecat.Purchases.Common.Subscriberattributes;
 using Google.Android.Material.FloatingActionButton;
 using Google.Android.Material.Snackbar;
-using Xamarin.RevenueCat.Android.Extensions;
 using static Android.Views.View;
 
 namespace Xamarin.RevenueCat.Android.UsageChecker
@@ -30,21 +30,16 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
             fab.Click += FabOnClick;
 
             Purchases.DebugLogsEnabled = true;
-            Purchases.Configure(this, "apikey");
+            Purchases.Configure(new PurchasesConfiguration.Builder(this, "apikey").Build());
             string revenueCatVersion = Purchases.FrameworkVersion;
 
             var txtRevenueCatVersion = FindViewById<TextView>(Resource.Id.txtRevenueCatVersion);
-
-            var txtIsBillingEnabled = FindViewById<TextView>(Resource.Id.txtIsBillingSupported);
 
             var txtAdjustNetwork = FindViewById<TextView>(Resource.Id.txtAdjustNetwork);
 
             txtRevenueCatVersion.Text = $"RevenueCat {revenueCatVersion}";
 
-            bool billingSupported = await PurchasesUtil.IsBillingSupportedAsync(this);
-            txtIsBillingEnabled.Text = $"Billing Supported: {billingSupported}";
-
-            var adjustNetwork = Purchases.AttributionNetwork.Adjust.ToString();
+            string adjustNetwork = SubscriberAttributeKey.AttributionIds.Adjust.Instance.BackendKey;
             txtAdjustNetwork.Text = adjustNetwork;
         }
 

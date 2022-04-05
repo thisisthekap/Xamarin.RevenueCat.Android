@@ -265,7 +265,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionMenuTextColor = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionMenuTextColor;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeCloseButtonStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeCloseContentDescription = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeCloseContentDescription;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeCloseDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeCloseDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeCopyDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeCopyDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeCutDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeCutDrawable;
@@ -276,7 +275,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeShareDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeShareDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeSplitBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeSplitBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeStyle;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeTheme = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeTheme;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionModeWebSearchDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionModeWebSearchDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionOverflowButtonStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionOverflowButtonStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.actionOverflowMenuStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.actionOverflowMenuStyle;
@@ -364,7 +362,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.drawableTintMode = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.drawableTintMode;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.drawableTopCompat = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.drawerArrowStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.drawerLayoutStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.drawerLayoutStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.dropdownListPreferredItemHeight = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.dropDownListViewStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.dropDownListViewStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.editTextBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.editTextBackground;
@@ -427,7 +424,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.navigationContentDescription = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.navigationContentDescription;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.navigationIcon = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.navigationIcon;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.navigationMode = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.navigationMode;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.nestedScrollViewStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.nestedScrollViewStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.numericModifiers = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.numericModifiers;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.overlapAnchor = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.overlapAnchor;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.paddingBottomNoButtons = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.paddingBottomNoButtons;
@@ -445,7 +441,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.progressBarStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.progressBarStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.queryBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.queryBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.queryHint = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.queryHint;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.queryPatterns = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.queryPatterns;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.radioButtonStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.radioButtonStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.ratingBarStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.ratingBarStyleIndicator = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.ratingBarStyleIndicator;
@@ -456,7 +451,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.seekBarStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.seekBarStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.selectableItemBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.selectableItemBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.selectableItemBackgroundBorderless = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.shortcutMatchRequired = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.shortcutMatchRequired;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.showAsAction = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.showAsAction;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.showDividers = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.showDividers;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.showText = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.showText;
@@ -680,9 +674,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_seekbar_track_background_height_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_seekbar_track_background_height_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_seekbar_track_progress_height_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_select_dialog_padding_start_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_star_big = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_star_big;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_star_medium = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_star_medium;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_star_small = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_star_small;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_switch_padding = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_switch_padding;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_text_size_body_1_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_text_size_body_1_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.abc_text_size_body_2_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.abc_text_size_body_2_material;
@@ -709,7 +700,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.compat_control_corner_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.compat_control_corner_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.compat_notification_large_icon_max_height = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.compat_notification_large_icon_max_height;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.compat_notification_large_icon_max_width = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.compat_notification_large_icon_max_width;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.def_drawer_elevation = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.def_drawer_elevation;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.disabled_alpha_material_dark = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.disabled_alpha_material_dark;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.disabled_alpha_material_light = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.disabled_alpha_material_light;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Dimension.highlight_alpha_material_colored = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Dimension.highlight_alpha_material_colored;
@@ -805,8 +795,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_seekbar_track_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_seekbar_track_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_spinner_mtrl_am_alpha;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_spinner_textfield_background_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_star_black_48dp = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_star_black_48dp;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_star_half_black_48dp = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_star_half_black_48dp;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_switch_thumb_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_switch_thumb_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_tab_indicator_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_tab_indicator_material;
@@ -817,9 +805,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_textfield_search_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_text_cursor_material = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_text_cursor_material;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_text_select_handle_left_mtrl = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_text_select_handle_left_mtrl;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_text_select_handle_middle_mtrl = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_text_select_handle_middle_mtrl;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_text_select_handle_right_mtrl = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_text_select_handle_right_mtrl;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.abc_vector_test = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.abc_vector_test;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.btn_checkbox_checked_mtrl = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.btn_checkbox_checked_mtrl;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
@@ -1023,6 +1008,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.abc_config_activityShortDur = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.abc_config_activityShortDur;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.cancel_button_image_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.cancel_button_image_alpha;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.config_tooltipAnimTime = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.google_play_services_version = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.google_play_services_version;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.status_bar_notification_info_maxnum = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
@@ -1098,6 +1084,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.abc_shareactionprovider_share_with_application = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.abc_shareactionprovider_share_with_application;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.abc_toolbar_collapse_description = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.abc_toolbar_collapse_description;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.app_name = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.app_name;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.common_google_play_services_unknown_issue = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.common_google_play_services_unknown_issue;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.hello = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.hello;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.search_menu_title = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.search_menu_title;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.status_bar_notification_info_overflow = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.status_bar_notification_info_overflow;
@@ -1578,7 +1565,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeCloseContentDescription = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeCloseContentDescription;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
@@ -1589,7 +1575,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeTheme = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeTheme;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
@@ -1690,9 +1675,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.AppCompatTheme_windowNoTitle;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.ButtonBarLayout = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.ButtonBarLayout;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.ButtonBarLayout_allowStacking = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.Capability = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.Capability;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.Capability_queryPatterns = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.Capability_queryPatterns;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.Capability_shortcutMatchRequired = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.Capability_shortcutMatchRequired;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.ColorStateListItem = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.ColorStateListItem_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.ColorStateListItem_android_alpha = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -1711,8 +1693,6 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.DrawerArrowToggle_spinBars = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.DrawerArrowToggle_spinBars;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.DrawerArrowToggle_thickness = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.DrawerLayout = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.DrawerLayout;
-			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.DrawerLayout_elevation = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.DrawerLayout_elevation;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.FontFamily = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.FontFamily;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.FontFamilyFont = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Styleable.FontFamilyFont_android_font = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Styleable.FontFamilyFont_android_font;
@@ -8885,76 +8865,73 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			public const int txtAdjustNetwork = 2131231172;
 			
 			// aapt resource value: 0x7F0801C5
-			public const int txtIsBillingSupported = 2131231173;
+			public const int txtRevenueCatVersion = 2131231173;
 			
 			// aapt resource value: 0x7F0801C6
-			public const int txtRevenueCatVersion = 2131231174;
+			public const int @unchecked = 2131231174;
 			
 			// aapt resource value: 0x7F0801C7
-			public const int @unchecked = 2131231175;
+			public const int uniform = 2131231175;
 			
 			// aapt resource value: 0x7F0801C8
-			public const int uniform = 2131231176;
+			public const int unlabeled = 2131231176;
 			
 			// aapt resource value: 0x7F0801C9
-			public const int unlabeled = 2131231177;
+			public const int up = 2131231177;
 			
 			// aapt resource value: 0x7F0801CA
-			public const int up = 2131231178;
+			public const int useLogo = 2131231178;
 			
 			// aapt resource value: 0x7F0801CB
-			public const int useLogo = 2131231179;
+			public const int vertical_only = 2131231179;
 			
 			// aapt resource value: 0x7F0801CC
-			public const int vertical_only = 2131231180;
+			public const int view_offset_helper = 2131231180;
 			
 			// aapt resource value: 0x7F0801CD
-			public const int view_offset_helper = 2131231181;
+			public const int view_transition = 2131231181;
 			
 			// aapt resource value: 0x7F0801CE
-			public const int view_transition = 2131231182;
+			public const int view_tree_lifecycle_owner = 2131231182;
 			
 			// aapt resource value: 0x7F0801CF
-			public const int view_tree_lifecycle_owner = 2131231183;
+			public const int view_tree_saved_state_registry_owner = 2131231183;
 			
 			// aapt resource value: 0x7F0801D0
-			public const int view_tree_saved_state_registry_owner = 2131231184;
+			public const int view_tree_view_model_store_owner = 2131231184;
 			
 			// aapt resource value: 0x7F0801D1
-			public const int view_tree_view_model_store_owner = 2131231185;
+			public const int visible = 2131231185;
 			
 			// aapt resource value: 0x7F0801D2
-			public const int visible = 2131231186;
+			public const int visible_removing_fragment_view_tag = 2131231186;
 			
 			// aapt resource value: 0x7F0801D3
-			public const int visible_removing_fragment_view_tag = 2131231187;
-			
-			// aapt resource value: 0x7F0801D4
-			public const int west = 2131231188;
-			
-			// aapt resource value: 0x7F0801D6
-			public const int withinBounds = 2131231190;
+			public const int west = 2131231187;
 			
 			// aapt resource value: 0x7F0801D5
-			public const int withText = 2131231189;
+			public const int withinBounds = 2131231189;
+			
+			// aapt resource value: 0x7F0801D4
+			public const int withText = 2131231188;
+			
+			// aapt resource value: 0x7F0801D6
+			public const int wrap = 2131231190;
 			
 			// aapt resource value: 0x7F0801D7
-			public const int wrap = 2131231191;
+			public const int wrap_content = 2131231191;
 			
 			// aapt resource value: 0x7F0801D8
-			public const int wrap_content = 2131231192;
+			public const int wrap_content_constrained = 2131231192;
 			
 			// aapt resource value: 0x7F0801D9
-			public const int wrap_content_constrained = 2131231193;
+			public const int x_left = 2131231193;
 			
 			// aapt resource value: 0x7F0801DA
-			public const int x_left = 2131231194;
+			public const int x_right = 2131231194;
 			
 			// aapt resource value: 0x7F0801DB
-			public const int x_right = 2131231195;
-			
-			// aapt resource value: 0x7F0801DC
-			public const int zero_corner_chip = 2131231196;
+			public const int zero_corner_chip = 2131231195;
 			
 			static Id()
 			{
@@ -8994,64 +8971,67 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			public const int design_tab_indicator_anim_duration_ms = 2131296263;
 			
 			// aapt resource value: 0x7F090008
-			public const int hide_password_duration = 2131296264;
+			public const int google_play_services_version = 2131296264;
 			
 			// aapt resource value: 0x7F090009
-			public const int material_motion_duration_long_1 = 2131296265;
+			public const int hide_password_duration = 2131296265;
 			
 			// aapt resource value: 0x7F09000A
-			public const int material_motion_duration_long_2 = 2131296266;
+			public const int material_motion_duration_long_1 = 2131296266;
 			
 			// aapt resource value: 0x7F09000B
-			public const int material_motion_duration_medium_1 = 2131296267;
+			public const int material_motion_duration_long_2 = 2131296267;
 			
 			// aapt resource value: 0x7F09000C
-			public const int material_motion_duration_medium_2 = 2131296268;
+			public const int material_motion_duration_medium_1 = 2131296268;
 			
 			// aapt resource value: 0x7F09000D
-			public const int material_motion_duration_short_1 = 2131296269;
+			public const int material_motion_duration_medium_2 = 2131296269;
 			
 			// aapt resource value: 0x7F09000E
-			public const int material_motion_duration_short_2 = 2131296270;
+			public const int material_motion_duration_short_1 = 2131296270;
 			
 			// aapt resource value: 0x7F09000F
-			public const int material_motion_path = 2131296271;
+			public const int material_motion_duration_short_2 = 2131296271;
 			
 			// aapt resource value: 0x7F090010
-			public const int mtrl_badge_max_character_count = 2131296272;
+			public const int material_motion_path = 2131296272;
 			
 			// aapt resource value: 0x7F090011
-			public const int mtrl_btn_anim_delay_ms = 2131296273;
+			public const int mtrl_badge_max_character_count = 2131296273;
 			
 			// aapt resource value: 0x7F090012
-			public const int mtrl_btn_anim_duration_ms = 2131296274;
+			public const int mtrl_btn_anim_delay_ms = 2131296274;
 			
 			// aapt resource value: 0x7F090013
-			public const int mtrl_calendar_header_orientation = 2131296275;
+			public const int mtrl_btn_anim_duration_ms = 2131296275;
 			
 			// aapt resource value: 0x7F090014
-			public const int mtrl_calendar_selection_text_lines = 2131296276;
+			public const int mtrl_calendar_header_orientation = 2131296276;
 			
 			// aapt resource value: 0x7F090015
-			public const int mtrl_calendar_year_selector_span = 2131296277;
+			public const int mtrl_calendar_selection_text_lines = 2131296277;
 			
 			// aapt resource value: 0x7F090016
-			public const int mtrl_card_anim_delay_ms = 2131296278;
+			public const int mtrl_calendar_year_selector_span = 2131296278;
 			
 			// aapt resource value: 0x7F090017
-			public const int mtrl_card_anim_duration_ms = 2131296279;
+			public const int mtrl_card_anim_delay_ms = 2131296279;
 			
 			// aapt resource value: 0x7F090018
-			public const int mtrl_chip_anim_duration = 2131296280;
+			public const int mtrl_card_anim_duration_ms = 2131296280;
 			
 			// aapt resource value: 0x7F090019
-			public const int mtrl_tab_indicator_anim_duration_ms = 2131296281;
+			public const int mtrl_chip_anim_duration = 2131296281;
 			
 			// aapt resource value: 0x7F09001A
-			public const int show_password_duration = 2131296282;
+			public const int mtrl_tab_indicator_anim_duration_ms = 2131296282;
 			
 			// aapt resource value: 0x7F09001B
-			public const int status_bar_notification_info_maxnum = 2131296283;
+			public const int show_password_duration = 2131296283;
+			
+			// aapt resource value: 0x7F09001C
+			public const int status_bar_notification_info_maxnum = 2131296284;
 			
 			static Integer()
 			{
@@ -9639,226 +9619,229 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			public const int clear_text_end_icon_content_description = 2131689508;
 			
 			// aapt resource value: 0x7F0F0025
-			public const int copy_toast_msg = 2131689509;
+			public const int common_google_play_services_unknown_issue = 2131689509;
 			
 			// aapt resource value: 0x7F0F0026
-			public const int error_icon_content_description = 2131689510;
+			public const int copy_toast_msg = 2131689510;
 			
 			// aapt resource value: 0x7F0F0027
-			public const int exposed_dropdown_menu_content_description = 2131689511;
+			public const int error_icon_content_description = 2131689511;
 			
 			// aapt resource value: 0x7F0F0028
-			public const int fab_transformation_scrim_behavior = 2131689512;
+			public const int exposed_dropdown_menu_content_description = 2131689512;
 			
 			// aapt resource value: 0x7F0F0029
-			public const int fab_transformation_sheet_behavior = 2131689513;
+			public const int fab_transformation_scrim_behavior = 2131689513;
 			
 			// aapt resource value: 0x7F0F002A
-			public const int fallback_menu_item_copy_link = 2131689514;
+			public const int fab_transformation_sheet_behavior = 2131689514;
 			
 			// aapt resource value: 0x7F0F002B
-			public const int fallback_menu_item_open_in_browser = 2131689515;
+			public const int fallback_menu_item_copy_link = 2131689515;
 			
 			// aapt resource value: 0x7F0F002C
-			public const int fallback_menu_item_share_link = 2131689516;
+			public const int fallback_menu_item_open_in_browser = 2131689516;
 			
 			// aapt resource value: 0x7F0F002D
-			public const int hello = 2131689517;
+			public const int fallback_menu_item_share_link = 2131689517;
 			
 			// aapt resource value: 0x7F0F002E
-			public const int hide_bottom_view_on_scroll_behavior = 2131689518;
+			public const int hello = 2131689518;
 			
 			// aapt resource value: 0x7F0F002F
-			public const int icon_content_description = 2131689519;
+			public const int hide_bottom_view_on_scroll_behavior = 2131689519;
 			
 			// aapt resource value: 0x7F0F0030
-			public const int item_view_role_description = 2131689520;
+			public const int icon_content_description = 2131689520;
 			
 			// aapt resource value: 0x7F0F0031
-			public const int material_clock_display_divider = 2131689521;
+			public const int item_view_role_description = 2131689521;
 			
 			// aapt resource value: 0x7F0F0032
-			public const int material_clock_toggle_content_description = 2131689522;
+			public const int material_clock_display_divider = 2131689522;
 			
 			// aapt resource value: 0x7F0F0033
-			public const int material_hour_selection = 2131689523;
+			public const int material_clock_toggle_content_description = 2131689523;
 			
 			// aapt resource value: 0x7F0F0034
-			public const int material_hour_suffix = 2131689524;
+			public const int material_hour_selection = 2131689524;
 			
 			// aapt resource value: 0x7F0F0035
-			public const int material_minute_selection = 2131689525;
+			public const int material_hour_suffix = 2131689525;
 			
 			// aapt resource value: 0x7F0F0036
-			public const int material_minute_suffix = 2131689526;
+			public const int material_minute_selection = 2131689526;
 			
 			// aapt resource value: 0x7F0F0037
-			public const int material_motion_easing_accelerated = 2131689527;
+			public const int material_minute_suffix = 2131689527;
 			
 			// aapt resource value: 0x7F0F0038
-			public const int material_motion_easing_decelerated = 2131689528;
+			public const int material_motion_easing_accelerated = 2131689528;
 			
 			// aapt resource value: 0x7F0F0039
-			public const int material_motion_easing_emphasized = 2131689529;
+			public const int material_motion_easing_decelerated = 2131689529;
 			
 			// aapt resource value: 0x7F0F003A
-			public const int material_motion_easing_linear = 2131689530;
+			public const int material_motion_easing_emphasized = 2131689530;
 			
 			// aapt resource value: 0x7F0F003B
-			public const int material_motion_easing_standard = 2131689531;
+			public const int material_motion_easing_linear = 2131689531;
 			
 			// aapt resource value: 0x7F0F003C
-			public const int material_slider_range_end = 2131689532;
+			public const int material_motion_easing_standard = 2131689532;
 			
 			// aapt resource value: 0x7F0F003D
-			public const int material_slider_range_start = 2131689533;
+			public const int material_slider_range_end = 2131689533;
 			
 			// aapt resource value: 0x7F0F003E
-			public const int material_timepicker_am = 2131689534;
+			public const int material_slider_range_start = 2131689534;
 			
 			// aapt resource value: 0x7F0F003F
-			public const int material_timepicker_clock_mode_description = 2131689535;
+			public const int material_timepicker_am = 2131689535;
 			
 			// aapt resource value: 0x7F0F0040
-			public const int material_timepicker_hour = 2131689536;
+			public const int material_timepicker_clock_mode_description = 2131689536;
 			
 			// aapt resource value: 0x7F0F0041
-			public const int material_timepicker_minute = 2131689537;
+			public const int material_timepicker_hour = 2131689537;
 			
 			// aapt resource value: 0x7F0F0042
-			public const int material_timepicker_pm = 2131689538;
+			public const int material_timepicker_minute = 2131689538;
 			
 			// aapt resource value: 0x7F0F0043
-			public const int material_timepicker_select_time = 2131689539;
+			public const int material_timepicker_pm = 2131689539;
 			
 			// aapt resource value: 0x7F0F0044
-			public const int material_timepicker_text_input_mode_description = 2131689540;
+			public const int material_timepicker_select_time = 2131689540;
 			
 			// aapt resource value: 0x7F0F0045
-			public const int mtrl_badge_numberless_content_description = 2131689541;
+			public const int material_timepicker_text_input_mode_description = 2131689541;
 			
 			// aapt resource value: 0x7F0F0046
-			public const int mtrl_chip_close_icon_content_description = 2131689542;
+			public const int mtrl_badge_numberless_content_description = 2131689542;
 			
 			// aapt resource value: 0x7F0F0047
-			public const int mtrl_exceed_max_badge_number_content_description = 2131689543;
+			public const int mtrl_chip_close_icon_content_description = 2131689543;
 			
 			// aapt resource value: 0x7F0F0048
-			public const int mtrl_exceed_max_badge_number_suffix = 2131689544;
+			public const int mtrl_exceed_max_badge_number_content_description = 2131689544;
 			
 			// aapt resource value: 0x7F0F0049
-			public const int mtrl_picker_a11y_next_month = 2131689545;
+			public const int mtrl_exceed_max_badge_number_suffix = 2131689545;
 			
 			// aapt resource value: 0x7F0F004A
-			public const int mtrl_picker_a11y_prev_month = 2131689546;
+			public const int mtrl_picker_a11y_next_month = 2131689546;
 			
 			// aapt resource value: 0x7F0F004B
-			public const int mtrl_picker_announce_current_selection = 2131689547;
+			public const int mtrl_picker_a11y_prev_month = 2131689547;
 			
 			// aapt resource value: 0x7F0F004C
-			public const int mtrl_picker_cancel = 2131689548;
+			public const int mtrl_picker_announce_current_selection = 2131689548;
 			
 			// aapt resource value: 0x7F0F004D
-			public const int mtrl_picker_confirm = 2131689549;
+			public const int mtrl_picker_cancel = 2131689549;
 			
 			// aapt resource value: 0x7F0F004E
-			public const int mtrl_picker_date_header_selected = 2131689550;
+			public const int mtrl_picker_confirm = 2131689550;
 			
 			// aapt resource value: 0x7F0F004F
-			public const int mtrl_picker_date_header_title = 2131689551;
+			public const int mtrl_picker_date_header_selected = 2131689551;
 			
 			// aapt resource value: 0x7F0F0050
-			public const int mtrl_picker_date_header_unselected = 2131689552;
+			public const int mtrl_picker_date_header_title = 2131689552;
 			
 			// aapt resource value: 0x7F0F0051
-			public const int mtrl_picker_day_of_week_column_header = 2131689553;
+			public const int mtrl_picker_date_header_unselected = 2131689553;
 			
 			// aapt resource value: 0x7F0F0052
-			public const int mtrl_picker_invalid_format = 2131689554;
+			public const int mtrl_picker_day_of_week_column_header = 2131689554;
 			
 			// aapt resource value: 0x7F0F0053
-			public const int mtrl_picker_invalid_format_example = 2131689555;
+			public const int mtrl_picker_invalid_format = 2131689555;
 			
 			// aapt resource value: 0x7F0F0054
-			public const int mtrl_picker_invalid_format_use = 2131689556;
+			public const int mtrl_picker_invalid_format_example = 2131689556;
 			
 			// aapt resource value: 0x7F0F0055
-			public const int mtrl_picker_invalid_range = 2131689557;
+			public const int mtrl_picker_invalid_format_use = 2131689557;
 			
 			// aapt resource value: 0x7F0F0056
-			public const int mtrl_picker_navigate_to_year_description = 2131689558;
+			public const int mtrl_picker_invalid_range = 2131689558;
 			
 			// aapt resource value: 0x7F0F0057
-			public const int mtrl_picker_out_of_range = 2131689559;
+			public const int mtrl_picker_navigate_to_year_description = 2131689559;
 			
 			// aapt resource value: 0x7F0F0058
-			public const int mtrl_picker_range_header_only_end_selected = 2131689560;
+			public const int mtrl_picker_out_of_range = 2131689560;
 			
 			// aapt resource value: 0x7F0F0059
-			public const int mtrl_picker_range_header_only_start_selected = 2131689561;
+			public const int mtrl_picker_range_header_only_end_selected = 2131689561;
 			
 			// aapt resource value: 0x7F0F005A
-			public const int mtrl_picker_range_header_selected = 2131689562;
+			public const int mtrl_picker_range_header_only_start_selected = 2131689562;
 			
 			// aapt resource value: 0x7F0F005B
-			public const int mtrl_picker_range_header_title = 2131689563;
+			public const int mtrl_picker_range_header_selected = 2131689563;
 			
 			// aapt resource value: 0x7F0F005C
-			public const int mtrl_picker_range_header_unselected = 2131689564;
+			public const int mtrl_picker_range_header_title = 2131689564;
 			
 			// aapt resource value: 0x7F0F005D
-			public const int mtrl_picker_save = 2131689565;
+			public const int mtrl_picker_range_header_unselected = 2131689565;
 			
 			// aapt resource value: 0x7F0F005E
-			public const int mtrl_picker_text_input_date_hint = 2131689566;
+			public const int mtrl_picker_save = 2131689566;
 			
 			// aapt resource value: 0x7F0F005F
-			public const int mtrl_picker_text_input_date_range_end_hint = 2131689567;
+			public const int mtrl_picker_text_input_date_hint = 2131689567;
 			
 			// aapt resource value: 0x7F0F0060
-			public const int mtrl_picker_text_input_date_range_start_hint = 2131689568;
+			public const int mtrl_picker_text_input_date_range_end_hint = 2131689568;
 			
 			// aapt resource value: 0x7F0F0061
-			public const int mtrl_picker_text_input_day_abbr = 2131689569;
+			public const int mtrl_picker_text_input_date_range_start_hint = 2131689569;
 			
 			// aapt resource value: 0x7F0F0062
-			public const int mtrl_picker_text_input_month_abbr = 2131689570;
+			public const int mtrl_picker_text_input_day_abbr = 2131689570;
 			
 			// aapt resource value: 0x7F0F0063
-			public const int mtrl_picker_text_input_year_abbr = 2131689571;
+			public const int mtrl_picker_text_input_month_abbr = 2131689571;
 			
 			// aapt resource value: 0x7F0F0064
-			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689572;
+			public const int mtrl_picker_text_input_year_abbr = 2131689572;
 			
 			// aapt resource value: 0x7F0F0065
-			public const int mtrl_picker_toggle_to_day_selection = 2131689573;
+			public const int mtrl_picker_toggle_to_calendar_input_mode = 2131689573;
 			
 			// aapt resource value: 0x7F0F0066
-			public const int mtrl_picker_toggle_to_text_input_mode = 2131689574;
+			public const int mtrl_picker_toggle_to_day_selection = 2131689574;
 			
 			// aapt resource value: 0x7F0F0067
-			public const int mtrl_picker_toggle_to_year_selection = 2131689575;
+			public const int mtrl_picker_toggle_to_text_input_mode = 2131689575;
 			
 			// aapt resource value: 0x7F0F0068
-			public const int password_toggle_content_description = 2131689576;
+			public const int mtrl_picker_toggle_to_year_selection = 2131689576;
 			
 			// aapt resource value: 0x7F0F0069
-			public const int path_password_eye = 2131689577;
+			public const int password_toggle_content_description = 2131689577;
 			
 			// aapt resource value: 0x7F0F006A
-			public const int path_password_eye_mask_strike_through = 2131689578;
+			public const int path_password_eye = 2131689578;
 			
 			// aapt resource value: 0x7F0F006B
-			public const int path_password_eye_mask_visible = 2131689579;
+			public const int path_password_eye_mask_strike_through = 2131689579;
 			
 			// aapt resource value: 0x7F0F006C
-			public const int path_password_strike_through = 2131689580;
+			public const int path_password_eye_mask_visible = 2131689580;
 			
 			// aapt resource value: 0x7F0F006D
-			public const int search_menu_title = 2131689581;
+			public const int path_password_strike_through = 2131689581;
 			
 			// aapt resource value: 0x7F0F006E
-			public const int status_bar_notification_info_overflow = 2131689582;
+			public const int search_menu_title = 2131689582;
+			
+			// aapt resource value: 0x7F0F006F
+			public const int status_bar_notification_info_overflow = 2131689583;
 			
 			static String()
 			{
