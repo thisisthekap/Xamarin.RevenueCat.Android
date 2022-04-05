@@ -11,20 +11,74 @@ steps:
   displayName: Set Build Number
 
 - bash: |
-    cd Xamarin.RevenueCat.Android
+  cd Xamarin.RevenueCat.Android.Core.Strings
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
-    cd ..
-  displayName: "Bindings: Build Release Nuget"
+  displayName: "Xamarin.RevenueCat.Android.Core.Strings: Build Release Nuget"
 
 - bash: |
-    cd Xamarin.RevenueCat.Android.Extensions
+  cd Xamarin.RevenueCat.Android.Core.Utils
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
-    cd ..
-  displayName: "Extensions: Build Release Nuget"
+  displayName: "Xamarin.RevenueCat.Android.Core.Utils: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Core.Public
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Core.Public: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Core.Common
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Core.Common: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Core.Feature.Identity
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Core.Feature.Identity: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Store.Google
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Store.Google: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Store.Amazon
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Store.Amazon: Build Release Nuget"
+
+- bash: |
+  cd Xamarin.RevenueCat.Android.Extensions
+    msbuild /t:Restore /p:Configuration=Release
+    msbuild /t:Build /p:Configuration=Release
+    msbuild /t:Pack /p:Configuration=Release
+  displayName: "Xamarin.RevenueCat.Android.Extensions: Build Release Nuget"
 
 - bash: |
     msbuild /t:Restore

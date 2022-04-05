@@ -1,17 +1,17 @@
-using Android.BillingClient.Api;
 using Com.Revenuecat.Purchases;
+using Com.Revenuecat.Purchases.Models;
 
 namespace Xamarin.RevenueCat.Android.Extensions
 {
     public class PurchaseSuccessInfo
     {
-        public Purchase Purchase { get; }
-        public PurchaserInfo PurchaserInfo { get; }
+        public StoreTransaction StoreTransaction { get; }
+        public CustomerInfo CustomerInfo { get; }
 
-        public PurchaseSuccessInfo(Purchase purchase, PurchaserInfo purchaserInfo)
+        public PurchaseSuccessInfo(StoreTransaction storeTransaction, CustomerInfo customerInfo)
         {
-            Purchase = purchase;
-            PurchaserInfo = purchaserInfo;
+            StoreTransaction = storeTransaction;
+            CustomerInfo = customerInfo;
         }
     }
 }

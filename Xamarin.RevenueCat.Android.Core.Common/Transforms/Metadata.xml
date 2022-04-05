@@ -1,0 +1,10 @@
+﻿<metadata>
+
+    <remove-node
+            path="/api/package[@name='com.revenuecat.purchases.common.networking']/class[@name='ETagManager']/field[@name='Companion']"/>
+    <remove-node
+            path="/api/package[@name='com.revenuecat.purchases.common.networking']/class[@name='HTTPResult']/field[@name='Companion']"/>
+    <remove-node
+            path="/api/package[@name='com.revenuecat.purchases.common.networking']/class[@name='HTTPResultWithETag']/field[@name='Companion']"/>
+
+</metadata>
