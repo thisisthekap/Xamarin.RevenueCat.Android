@@ -165,6 +165,10 @@
         <Project>{D0A406F5-2173-41F0-AC22-F0A31BB4BA22}</Project>
         <Name>Xamarin.RevenueCat.Android.Core.Utils</Name>
       </ProjectReference>
+      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Store.Amazon\Xamarin.RevenueCat.Android.Store.Amazon.csproj">
+        <Project>{FF003B5A-70D0-4E57-B9CE-E444B9C869A0}</Project>
+        <Name>Xamarin.RevenueCat.Android.Store.Amazon</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
