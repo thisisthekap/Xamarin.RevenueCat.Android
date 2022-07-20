@@ -3,7 +3,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Xamarin.RevenueCat.Android</PackageId>
-        <Version>5.0.0.8</Version>
+        <Version>5.3.0.1</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
         <Authors>Christian Kapplmüller</Authors>
         <Company>fun.music IT GmbH</Company>
@@ -24,7 +24,7 @@
         <AssemblyName>Xamarin.RevenueCat.Android</AssemblyName>
         <FileAlignment>512</FileAlignment>
         <Deterministic>True</Deterministic>
-        <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
         <AndroidClassParser>class-parse</AndroidClassParser>
         <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
         <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -60,23 +60,23 @@
     <ItemGroup>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime" Version="1.4.10" />
-        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.1.0">
+        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.2.1">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
         <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="4.0.0" />
-        <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.2.0" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.3.1.1" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.3.1.1" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.10" />
+        <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.3.0.4" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.3.1.3" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.3.1.4" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.4.20" />
     </ItemGroup>
 
     <ItemGroup>
-      <LibraryProjectZip Include="Jars\purchases-5.0.0.aar" />
+      <LibraryProjectZip Include="Jars\purchases-5.3.0.aar" />
     </ItemGroup>
     <ItemGroup>
-      <JavaSourceJar Include="Jars\purchases-5.0.0-sources.jar" />
+      <JavaSourceJar Include="Jars\purchases-5.3.0-sources.jar" />
     </ItemGroup>
     <PropertyGroup>
           <NoWarn>$(NoWarn);CS0618</NoWarn>
@@ -113,7 +113,7 @@
     </ItemGroup>
     <Target Name="FixStamp" BeforeTargets="_ExtractJavaDocJars">
         <MakeDir Directories="$(IntermediateOutputPath)javadocs" />
-        <Touch Files="@(JavaDocJar-&gt;'$(IntermediateOutputPath)javadocs\%(FileName).stamp')" AlwaysCreate="True" />
+        <Touch Files="@(JavaDocJar->'$(IntermediateOutputPath)javadocs\%(FileName).stamp')" AlwaysCreate="True" />
     </Target>
 
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
