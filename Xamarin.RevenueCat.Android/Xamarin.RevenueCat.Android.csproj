@@ -111,10 +111,6 @@
         <Name>Xamarin.RevenueCat.Android.Store.Google</Name>
       </ProjectReference>
     </ItemGroup>
-    <Target Name="FixStamp" BeforeTargets="_ExtractJavaDocJars">
-        <MakeDir Directories="$(IntermediateOutputPath)javadocs" />
-        <Touch Files="@(JavaDocJar->'$(IntermediateOutputPath)javadocs\%(FileName).stamp')" AlwaysCreate="True" />
-    </Target>
 
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
 </Project>
