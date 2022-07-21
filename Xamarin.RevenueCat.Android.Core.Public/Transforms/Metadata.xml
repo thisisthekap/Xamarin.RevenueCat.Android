@@ -3,4 +3,6 @@
     <remove-node
             path="//field[@final='true' and @name='CREATOR' and @jni-signature='Landroid/os/Parcelable$Creator;' and @static='true' and @type='android.os.Parcelable.Creator']"/>
 
+    <remove-node path="//implements[@name='android.os.Parcelable.Creator']" />
+
 </metadata>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>Xamarin.RevenueCat.Android.Core.Strings</PackageId>
-    <Version>5.0.0.8</Version>
+    <Version>5.3.0.2</Version>
     <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
     <Authors>Christian Kapplmüller</Authors>
     <Company>fun.music IT GmbH</Company>
@@ -24,7 +24,7 @@
     <AssemblyName>Xamarin.RevenueCat.Android.Core.Strings</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <Deterministic>True</Deterministic>
-    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
@@ -55,18 +55,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\purchases-core-strings-5.0.0.aar" />
+    <LibraryProjectZip Include="Jars\purchases-core-strings-5.3.0.aar" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime" Version="1.4.10" />
-    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.1.0">
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.2.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.10" />
+    <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.20" />
   </ItemGroup>
   <ItemGroup>
-    <JavaSourceJar Include="Jars\purchases-core-strings-5.0.0-sources.jar" />
+    <JavaSourceJar Include="Jars\purchases-core-strings-5.3.0-sources.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
