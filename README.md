@@ -40,17 +40,17 @@ Furthermore, you need to add this line to your `proguard.cfg` to support Revenue
 If you encounter errors like `Java.Lang.NoClassDefFoundError: Failed resolution of: Lkotlin/jvm/internal/Intrinsics`, consider to explicitly reference the transitive dependencies of `Xamarin.RevenueCat.Android`:
 
 * Xamarin.Android.Google.BillingClient
-  * Version >= 4.0.0
+	* Version >= 4.0.0
 * Xamarin.AndroidX.Annotation
-  * Version >= 1.3.0.4
+	* Version >= 1.3.0.4
 * Xamarin.AndroidX.Lifecycle.Process
-  * Version >= 2.3.1.3
+	* Version >= 2.3.1.3
 * Xamarin.AndroidX.Lifecycle.Runtime
-  * Version >= 2.3.1.4
+	* Version >= 2.3.1.4
 * Xamarin.Kotlin.StdLib.Jdk7
-  * Version >= 1.4.20
+	* Version >= 1.4.20
 * org.jetbrains.kotlin.kotlin.parcelize.runtime
-  * Version >= 1.5.20.1
+	* Version >= 1.5.20.1
 
 ## Xamarin.RevenueCat.Android.UsageChecker.UITests
 
