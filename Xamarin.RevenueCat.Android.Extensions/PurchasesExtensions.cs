@@ -11,6 +11,14 @@ namespace Xamarin.RevenueCat.Android.Extensions
 {
     public static class PurchasesExtensions
     {
+        public static Task<CustomerInfo> GetCustomerInfoAsync(this Purchases purchases,
+            CancellationToken cancellationToken = default)
+        {
+            var listener = new DelegatingReceiveCustomerInfoCallback(cancellationToken);
+            purchases.GetCustomerInfo(listener);
+            return listener.Task;
+        }
+
         public static Task<CustomerInfo> LogInAsync(this Purchases purchases, string newAppUserId,
             CancellationToken cancellationToken = default)
         {
