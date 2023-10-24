@@ -105,38 +105,13 @@
         <Folder Include="Resources\drawable\" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.Utils" Version="1.0.0.10" />
-        <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.3.0.8" />
-        <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Extensions">
-          <Version>2.2.0.10</Version>
-        </PackageReference>
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime">
-          <Version>2.3.1.1</Version>
-        </PackageReference>
-        <PackageReference Include="Xamarin.AndroidX.Annotation">
-          <Version>1.3.0.4</Version>
-        </PackageReference>
-        <PackageReference Include="Xamarin.Android.Google.BillingClient">
-          <Version>4.0.0</Version>
-        </PackageReference>
-        <PackageReference Include="Karamunting.Kotlin.Android.Extensions.Runtime">
-          <Version>1.4.10</Version>
+        <PackageReference Include="Tonestro.Droid.Kotlin.Android.Extensions.Runtime" Version="1.7.21.1" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.7.7" />
+        <PackageReference Include="Xamarin.Google.Android.Material">
+          <Version>1.10.0.1</Version>
         </PackageReference>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.3.1.3" />
-        <PackageReference Include="Xamarin.Google.Android.Material" Version="1.4.0.4" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Common\Xamarin.RevenueCat.Android.Core.Common.csproj">
-        <Project>{a1f50e80-9fce-419a-9b0f-3ab3b3eca7c7}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Common</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Public\Xamarin.RevenueCat.Android.Core.Public.csproj">
-        <Project>{a7ef7683-a182-4f68-a2a3-d0ee3a467c86}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Public</Name>
-      </ProjectReference>
       <ProjectReference Include="..\Xamarin.RevenueCat.Android\Xamarin.RevenueCat.Android.csproj">
         <Project>{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}</Project>
         <Name>Xamarin.RevenueCat.Android</Name>
@@ -144,30 +119,6 @@
       <ProjectReference Include="..\Xamarin.RevenueCat.Android.Extensions\Xamarin.RevenueCat.Android.Extensions.csproj">
         <Project>{FA4AC6AA-946D-4991-B546-43DDD9811B7A}</Project>
         <Name>Xamarin.RevenueCat.Android.Extensions</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes\Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes.csproj">
-        <Project>{50A65797-1C84-441C-B336-48C1DC508EDB}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Store.Google\Xamarin.RevenueCat.Android.Store.Google.csproj">
-        <Project>{3C1FD6D0-7AD9-446F-9721-72E995FF7C72}</Project>
-        <Name>Xamarin.RevenueCat.Android.Store.Google</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Feature.Identity\Xamarin.RevenueCat.Android.Core.Feature.Identity.csproj">
-        <Project>{4223C1A0-312C-4E56-9E8E-93DD30F45BE7}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Feature.Identity</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Strings\Xamarin.RevenueCat.Android.Core.Strings.csproj">
-        <Project>{138B09A4-B778-4574-97C6-EE9873BE7C47}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Strings</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Core.Utils\Xamarin.RevenueCat.Android.Core.Utils.csproj">
-        <Project>{D0A406F5-2173-41F0-AC22-F0A31BB4BA22}</Project>
-        <Name>Xamarin.RevenueCat.Android.Core.Utils</Name>
-      </ProjectReference>
-      <ProjectReference Include="..\Xamarin.RevenueCat.Android.Store.Amazon\Xamarin.RevenueCat.Android.Store.Amazon.csproj">
-        <Project>{FF003B5A-70D0-4E57-B9CE-E444B9C869A0}</Project>
-        <Name>Xamarin.RevenueCat.Android.Store.Amazon</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
