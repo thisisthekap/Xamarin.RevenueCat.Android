@@ -28,7 +28,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
         public void CheckRevenueCatVersion()
         {
             AppResult versionElement = app.WaitForElement(c => c.Id("txtRevenueCatVersion")).First();
-            Assert.AreEqual("RevenueCat 5.0.0", versionElement.Text);
+            Assert.AreEqual("RevenueCat 7.0.1", versionElement.Text);
             app.Screenshot("RevenueCat Version");
         }
 
