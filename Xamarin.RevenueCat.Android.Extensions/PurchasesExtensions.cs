@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Android.App;
 using Com.Revenuecat.Purchases;
@@ -43,11 +44,21 @@ namespace Xamarin.RevenueCat.Android.Extensions
             return listener.Task;
         }
 
+        [Obsolete("Use PurchaseAsync() instead")]
         public static Task<PurchaseSuccessInfo> PurchasePackageAsync(this Purchases purchases, Activity activity,
             Package packageToPurchase, CancellationToken cancellationToken = default)
         {
             var listener = new DelegatingMakePurchaseListener(cancellationToken);
             purchases.PurchasePackage(activity, packageToPurchase, listener);
+            return listener.Task;
+        }
+
+        public static Task<PurchaseSuccessInfo> PurchaseAsync(this Purchases purchases, Activity activity,
+            Package packageToPurchase, CancellationToken cancellationToken = default)
+        {
+            var listener = new DelegatingMakePurchaseListener(cancellationToken);
+            var purchaseParams = new PurchaseParams(new PurchaseParams.Builder(activity, packageToPurchase));
+            purchases.Purchase(purchaseParams, listener);
             return listener.Task;
         }
 
