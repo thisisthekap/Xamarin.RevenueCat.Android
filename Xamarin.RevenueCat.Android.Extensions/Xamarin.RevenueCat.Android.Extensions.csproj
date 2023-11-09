@@ -4,7 +4,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>Xamarin.RevenueCat.Android.Extensions</PackageId>
     <Description>Contains convenience methods and async extensions for Xamarin.RevenueCat.Android</Description>
-    <Version>7.0.1.2</Version>
+    <Version>7.0.1.3</Version>
     <Authors>Christian Kapplmüller</Authors>
     <Company>fun.music IT GmbH</Company>
     <PackageOutputPath>nugetoutput</PackageOutputPath>
