@@ -1,5 +1,0 @@
-<metadata>
-
-    <remove-node path="//implements[@name='android.os.Parcelable.Creator']" />
-
-</metadata>

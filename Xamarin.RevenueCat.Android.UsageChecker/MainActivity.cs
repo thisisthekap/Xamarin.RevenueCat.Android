@@ -23,7 +23,8 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
             Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            AndroidX.AppCompat.Widget.Toolbar toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
+            AndroidX.AppCompat.Widget.Toolbar toolbar =
+                FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
@@ -39,8 +40,8 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 
             txtRevenueCatVersion.Text = $"RevenueCat {revenueCatVersion}";
 
-            string adjustNetwork = SubscriberAttributeKey.AttributionIds.Adjust.Instance.BackendKey;
-            txtAdjustNetwork.Text = adjustNetwork;
+
+            txtAdjustNetwork.Text = ReservedSubscriberAttribute.AdjustId.Value;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -67,7 +68,8 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
                 .SetAction("Action", (IOnClickListener)null).Show();
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
+            [GeneratedEnum] Permission[] grantResults)
         {
             Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 

@@ -6,7 +6,7 @@ trigger:
 pr: none
 
 pool:
-  vmImage: 'macOS-11'
+  vmImage: 'macOS-12'
 
 variables:
   - group: nuget.org
@@ -26,67 +26,11 @@ steps:
     fi
 
 - bash: |
-    cd Xamarin.RevenueCat.Android.Core.Strings
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Strings: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Core.Utils
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Utils: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Core.Public
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Public: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Core.Common
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Common: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Core.Feature.Identity
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Core.Feature.Identity: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Store.Google
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Store.Google: Build Release Nuget"
-
-- bash: |
     cd Xamarin.RevenueCat.Android
     msbuild /t:Restore /p:Configuration=Release
     msbuild /t:Build /p:Configuration=Release
     msbuild /t:Pack /p:Configuration=Release
   displayName: "Xamarin.RevenueCat.Android: Build Release Nuget"
-
-- bash: |
-    cd Xamarin.RevenueCat.Android.Store.Amazon
-    msbuild /t:Restore /p:Configuration=Release
-    msbuild /t:Build /p:Configuration=Release
-    msbuild /t:Pack /p:Configuration=Release
-  displayName: "Xamarin.RevenueCat.Android.Store.Amazon: Build Release Nuget"
 
 - bash: |
     cd Xamarin.RevenueCat.Android.Extensions
@@ -100,15 +44,7 @@ steps:
   displayName: "Copy nugets to nugetoutput folder"
 
 - bash: |
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Strings.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Utils.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Public.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Common.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Feature.Subscriber.Attributes.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Core.Feature.Identity.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Store.Google.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
     dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
-    dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Store.Amazon.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
     dotnet nuget push nugetoutput/Xamarin.RevenueCat.Android.Extensions.$(bindingsVersion).nupkg -k "$(nugetOrgApiKey)" -s https://api.nuget.org/v3/index.json
   displayName: "Publish nuget packages to nuget.org"
 
