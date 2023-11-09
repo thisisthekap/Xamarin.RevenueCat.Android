@@ -25,8 +25,9 @@ steps:
   displayName: "Xamarin.RevenueCat.Android.Extensions: Build Release Nuget"
 
 - bash: |
+    cd Xamarin.RevenueCat.Android.UsageChecker
     msbuild /t:Restore
-  displayName: Restore Solution
+  displayName: Restore UsageChecker
 
 - task: XamarinAndroid@1
   displayName: Build UsageChecker
