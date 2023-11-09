@@ -6,7 +6,7 @@ trigger:
 pr: none
 
 pool:
-  vmImage: 'macOS-13'
+  vmImage: 'macOS-12'
 
 variables:
   - group: nuget.org
