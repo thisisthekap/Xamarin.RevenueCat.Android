@@ -19,4 +19,5 @@
         path="/api/package[@name='com.revenuecat.purchases.common.subscriberattributes']/class[@name='ReservedSubscriberAttribute']"
         name="visibility">public
     </attr>
+    <remove-node path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor']" />
 </metadata>
