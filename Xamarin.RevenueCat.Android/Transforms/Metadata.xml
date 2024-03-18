@@ -19,5 +19,12 @@
         path="/api/package[@name='com.revenuecat.purchases.common.subscriberattributes']/class[@name='ReservedSubscriberAttribute']"
         name="visibility">public
     </attr>
-    <remove-node path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor']" />
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='deserialize' and count(parameter)=1]"
+        name="managedName">DeserializeInternal
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='serialize' and count(parameter)=2]"
+        name="managedName">SerializeInternal
+    </attr>
 </metadata>
