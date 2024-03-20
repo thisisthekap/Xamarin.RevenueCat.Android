@@ -248,6 +248,8 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Attribute.ttcIndex = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Attribute.ttcIndex;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.androidx_core_ripple_material_light = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.androidx_core_ripple_material_light;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.androidx_core_secondary_text_default_material_light = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.androidx_core_secondary_text_default_material_light;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.call_notification_answer_color = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.call_notification_answer_color;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.call_notification_decline_color = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.call_notification_decline_color;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.common_google_signin_btn_text_dark = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.common_google_signin_btn_text_dark;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.common_google_signin_btn_text_dark_default = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.common_google_signin_btn_text_dark_default;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Color.common_google_signin_btn_text_dark_disabled = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Color.common_google_signin_btn_text_dark_disabled;
@@ -304,6 +306,12 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.common_google_signin_btn_text_light_normal_background = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.common_google_signin_btn_text_light_normal_background;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.googleg_disabled_color_18 = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.googleg_disabled_color_18;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.googleg_standard_color_18 = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.googleg_standard_color_18;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_answer = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_answer;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_answer_low = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_answer_low;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_answer_video = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_answer_video;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_answer_video_low = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_answer_video_low;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_decline = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_decline;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.ic_call_decline_low = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.ic_call_decline_low;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_action_background = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_action_background;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_bg = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_bg;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_bg_low = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_bg_low;
@@ -312,6 +320,7 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_bg_normal = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_bg_normal;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_bg_normal_pressed = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_bg_normal_pressed;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_icon_background = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_icon_background;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_oversize_large_icon_bg = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_oversize_large_icon_bg;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_template_icon_bg = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_template_icon_bg;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_template_icon_low_bg = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Drawable.notification_tile_bg = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Drawable.notification_tile_bg;
@@ -362,8 +371,10 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.chronometer = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.chronometer;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.dark = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.dark;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.dialog_button = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.dialog_button;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.edit_text_id = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.edit_text_id;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.forever = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.forever;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.fragment_container_view_tag = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.fragment_container_view_tag;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.hide_ime_id = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.hide_ime_id;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.icon = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.icon;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.icon_group = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.icon_group;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Id.icon_only = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Id.icon_only;
@@ -408,6 +419,8 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.google_play_services_version = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.google_play_services_version;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Integer.status_bar_notification_info_maxnum = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.custom_dialog = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.custom_dialog;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.ime_base_split_test_activity = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.ime_base_split_test_activity;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.ime_secondary_split_test_activity = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.ime_secondary_split_test_activity;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.notification_action = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.notification_action;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.notification_action_tombstone = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.notification_action_tombstone;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Layout.notification_template_custom_big = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Layout.notification_template_custom_big;
@@ -418,6 +431,13 @@ namespace Xamarin.RevenueCat.Android.UsageChecker
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.Raw.com_android_billingclient_registration_info = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.Raw.com_android_billingclient_registration_info;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.androidx_startup = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.androidx_startup;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.app_name = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.app_name;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_answer_action = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_answer_action;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_answer_video_action = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_answer_video_action;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_decline_action = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_decline_action;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_hang_up_action = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_hang_up_action;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_incoming_text = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_incoming_text;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_ongoing_text = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_ongoing_text;
+			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.call_notification_screening_text = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.call_notification_screening_text;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.common_google_play_services_enable_button = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.common_google_play_services_enable_button;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.common_google_play_services_enable_text = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.common_google_play_services_enable_text;
 			global::Xamarin.RevenueCat.Android.Extensions.Resource.String.common_google_play_services_enable_title = global::Xamarin.RevenueCat.Android.UsageChecker.Resource.String.common_google_play_services_enable_title;
