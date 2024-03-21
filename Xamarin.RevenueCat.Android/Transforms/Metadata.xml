@@ -21,10 +21,14 @@
     </attr>
     <attr
         path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='deserialize' and count(parameter)=1]"
-        name="managedName">DeserializeInternal
+        name="managedReturn">Java.Lang.Object
     </attr>
     <attr
-        path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='serialize' and count(parameter)=2]"
-        name="managedName">SerializeInternal
+        path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='deserialize' and count(parameter)=1]"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.paywalls']/class[@name='PaywallColor.Serializer']/method[@name='serialize' and count(parameter)=2 and
+        parameter[2][@type='com.revenuecat.purchases.paywalls.PaywallColor']]/parameter[2]" name="managedType">
+        Java.Lang.Object
     </attr>
 </metadata>

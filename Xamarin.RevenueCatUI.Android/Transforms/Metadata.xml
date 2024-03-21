@@ -1,9 +1,96 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+    <!--
+    This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+    <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+    
+    This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+    <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+    -->
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.Serializer']/method[@name='deserialize' and count(parameter)=1]"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.Serializer']/method[@name='serialize' and count(parameter)=2 and
+        parameter[2][@type='com.revenuecat.purchases.ui.revenuecatui.fonts.PaywallFont']]/parameter[2]"
+        name="managedType">
+        Java.Lang.Object
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFontFamily.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFontFamily.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='GoogleFontProvider.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='GoogleFontProvider.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.GoogleFont.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.GoogleFont.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.ResourceFont.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.fonts']/class[@name='PaywallFont.ResourceFont.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Cancelled.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Cancelled.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Error.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Error.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Purchased.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Purchased.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Restored.Creator']/method[@name='createFromParcel']"
+        name="managedReturn">Java.Lang.Object
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Restored.Creator']/method[@name='newArray']"
+        name="managedReturn">Java.Lang.Object[]
+    </attr>
+
+    <remove-node
+        path="api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResultHandler']/method[@name='onActivityResult']" />
+    <remove-node
+        path="api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']/method[@name='onActivityResult']" />
 </metadata>
