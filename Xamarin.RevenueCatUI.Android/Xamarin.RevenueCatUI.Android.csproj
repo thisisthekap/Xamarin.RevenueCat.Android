@@ -26,6 +26,7 @@
         <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
         <AndroidClassParser>class-parse</AndroidClassParser>
         <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+        <AndroidXIsUsingAndroidXLibraries>true</AndroidXIsUsingAndroidXLibraries>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
@@ -60,29 +61,29 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-<!--        <PackageReference Include="Tonestro.Droid.Kotlin.Parcelize.Runtime" Version="1.7.21.6" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.7.2.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.1.0.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Tooling.Preview" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.4.3.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.6.1.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" Version="2.5.0" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.5.0" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime" Version="1.1.1.2" />-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Window" Version="1.1.0.3" />-->
+        <!--        <PackageReference Include="Tonestro.Droid.Kotlin.Parcelize.Runtime" Version="1.7.21.6" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.7.2.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.1.0.1" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Tooling.Preview" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.4.3.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.6.1.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime" Version="1.1.1.2" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Window" Version="1.1.0.3" />-->
         <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.7.21" />
         <!--        this should be 2.4.0. check first if we really need to bind ourselves then because minimum is 2.5.0 from nuget-->
-<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.5.0" />-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.5.0" />-->
         <!--        this should be 2.4.0. check first then decide if we need to bind ourselves-->
-<!--        <PackageReference Include="Binding.Io.CoilKt.CoilCompose" Version="2.0.0" />-->
+        <!--        <PackageReference Include="Binding.Io.CoilKt.CoilCompose" Version="2.0.0" />-->
         <!--        Check also if we need to bind androidx.window.core with version 1.1.0 by ourselves also-->
         <!--        Check also if we need to bind io.coil-kt.coilsvg with version 2.40 by ourselves also-->
         <!--        Check also if we need to bind org.commonmark with version 0.21.0 by ourselves also-->
@@ -100,6 +101,7 @@
             <Name>Xamarin.RevenueCat.Android</Name>
         </ProjectReference>
     </ItemGroup>
+
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.

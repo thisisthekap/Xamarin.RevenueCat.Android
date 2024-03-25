@@ -88,9 +88,4 @@
         path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Restored.Creator']/method[@name='newArray']"
         name="managedReturn">Java.Lang.Object[]
     </attr>
-
-    <remove-node
-        path="api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResultHandler']/method[@name='onActivityResult']" />
-    <remove-node
-        path="api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']/method[@name='onActivityResult']" />
 </metadata>

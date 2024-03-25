@@ -10,7 +10,7 @@ using Java.Lang;
 namespace Xamarin.RevenueCatUI.Android.UsageChecker
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public partial class MainActivity : AppCompatActivity, IPaywallResultHandler
+    public partial class MainActivity : Com.Revenuecatui.Helper.MainPaywallActivity
     {
         private PaywallActivityLauncher _paywallActivityLauncher;
 
@@ -29,10 +29,10 @@ namespace Xamarin.RevenueCatUI.Android.UsageChecker
         // public void onActivityResult(PaywallResult result)
         // {
         // }
-
-        public void OnActivityResult(Object result)
-        {
-        }
+        //
+        // public void OnActivityResult(Object result)
+        // {
+        // }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
             [GeneratedEnum] Permission[] grantResults)
