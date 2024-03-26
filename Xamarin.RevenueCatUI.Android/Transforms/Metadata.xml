@@ -88,4 +88,17 @@
         path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/class[@name='PaywallResult.Restored.Creator']/method[@name='newArray']"
         name="managedReturn">Java.Lang.Object[]
     </attr>
+
+    <remove-node path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']/implements[@name='androidx.activity.result.ActivityResultCallback']"/>
+    <add-node path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']">
+        <method abstract="true" deprecated="not deprecated" final="false" name="onActivityResult" jni-signature="(Lcom/revenuecat/purchases/ui/revenuecatui/activity/PaywallResult;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+            <parameter name="paywallResult" type="Com.Revenuecat.Purchases.UI.Revenuecatui.Activity.PaywallResult" jni-type="Lcom/revenuecat/purchases/ui/revenuecatui/activity/PaywallResult;" />
+        </method>
+    </add-node>
+
+<!--    <remove-node path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']"/>-->
+<!--    <remove-attr path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']/implements[@name='androidx.activity.result.ActivityResultCallback']" name="name-generic-aware"/>-->
+<!--    <attr path="/api/package[@name='com.revenuecat.purchases.ui.revenuecatui.activity']/interface[@name='PaywallResultHandler']/implements[@name='androidx.activity.result.ActivityResultCallback']" name="name-generic-aware">-->
+<!--    </attr>-->
+
 </metadata>

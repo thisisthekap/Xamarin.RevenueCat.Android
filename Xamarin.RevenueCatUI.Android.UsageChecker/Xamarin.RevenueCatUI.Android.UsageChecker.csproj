@@ -22,7 +22,7 @@
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
         <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
-        <AndroidUseAapt2>true</AndroidUseAapt2>
+<!--        <AndroidUseAapt2>true</AndroidUseAapt2>-->
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>True</DebugSymbols>
@@ -80,19 +80,15 @@
     <ItemGroup>
 <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />-->
 <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />-->
-        <PackageReference Include="Xamarin.Google.Android.Material">
-            <Version>1.10.0.3</Version>
-        </PackageReference>
+<!--        <PackageReference Include="Xamarin.Google.Android.Material">-->
+<!--            <Version>1.10.0.3</Version>-->
+<!--        </PackageReference>-->
         <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Xamarin.RevenueCat.Android\Xamarin.RevenueCat.Android.csproj">
             <Project>{a26721e7-6ae6-41c5-bc3b-c922c3840b8d}</Project>
             <Name>Xamarin.RevenueCat.Android</Name>
-        </ProjectReference>
-        <ProjectReference Include="..\Xamarin.RevenueCatUI.Android.Helper\Xamarin.RevenueCatUI.Android.Helper.csproj">
-          <Project>{baca0f17-e815-40fc-b894-5ca67a5254d6}</Project>
-          <Name>Xamarin.RevenueCatUI.Android.Helper</Name>
         </ProjectReference>
         <ProjectReference Include="..\Xamarin.RevenueCatUI.Android\Xamarin.RevenueCatUI.Android.csproj">
             <Project>{bc6a0890-86f5-496b-b806-9864bdabc77f}</Project>
