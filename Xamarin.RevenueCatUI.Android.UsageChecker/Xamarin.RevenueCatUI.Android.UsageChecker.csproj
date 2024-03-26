@@ -5,17 +5,16 @@
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
         <ProductVersion>8.0.30703</ProductVersion>
         <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{8FE96532-8DED-44C9-B45F-647DEAE3C4E5}</ProjectGuid>
+        <ProjectGuid>{5AC01DD2-E4BB-42C3-90F5-50D7F7BEDC0F}</ProjectGuid>
         <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-        <TemplateGuid>{84dd83c5-0fe3-4294-9419-09e7c8ba324f}</TemplateGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Xamarin.RevenueCat.Android.UsageChecker</RootNamespace>
-        <AssemblyName>Xamarin.RevenueCat.Android.UsageChecker</AssemblyName>
+        <RootNamespace>Xamarin.RevenueCatUI.Android.UsageChecker</RootNamespace>
+        <AssemblyName>Xamarin.RevenueCatUI.Android.UsageChecker</AssemblyName>
         <FileAlignment>512</FileAlignment>
         <Deterministic>True</Deterministic>
         <AndroidApplication>True</AndroidApplication>
-        <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+        <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
         <AndroidResgenClass>Resource</AndroidResgenClass>
         <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
         <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
@@ -23,7 +22,7 @@
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
         <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
-        <AndroidUseAapt2>true</AndroidUseAapt2>
+<!--        <AndroidUseAapt2>true</AndroidUseAapt2>-->
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>True</DebugSymbols>
@@ -39,7 +38,7 @@
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DebugSymbols>True</DebugSymbols>
-        <DebugType>portable</DebugType>
+        <DebugType>pdbonly</DebugType>
         <Optimize>True</Optimize>
         <OutputPath>bin\Release\</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
@@ -49,7 +48,6 @@
         <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
         <AndroidLinkMode>SdkOnly</AndroidLinkMode>
         <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-        <AndroidLinkTool>r8</AndroidLinkTool>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System" />
@@ -58,75 +56,51 @@
         <Reference Include="Mono.Android" />
         <Reference Include="System.Numerics" />
         <Reference Include="System.Numerics.Vectors" />
+        <Reference Include="Mono.Android.Export" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
-        <Compile Include="Resources\Resource.designer.cs" />
+        <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />
         <None Include="Properties\AndroidManifest.xml" />
         <None Include="Assets\AboutAssets.txt" />
-        <ProguardConfiguration Include="proguard.cfg" />
     </ItemGroup>
     <ItemGroup>
-        <AndroidResource Include="Resources\layout\activity_main.xml">
-            <SubType>Designer</SubType>
-        </AndroidResource>
-        <AndroidResource Include="Resources\layout\content_main.xml">
+        <AndroidResource Include="Resources\layout\activity_main.axml">
             <SubType>Designer</SubType>
         </AndroidResource>
         <AndroidResource Include="Resources\values\colors.xml" />
-        <AndroidResource Include="Resources\values\dimens.xml" />
         <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
         <AndroidResource Include="Resources\values\strings.xml" />
         <AndroidResource Include="Resources\values\styles.xml" />
-        <AndroidResource Include="Resources\menu\menu_main.xml" />
-        <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
-        <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
-        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
-        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
-        <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
-        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
-        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
-        <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
-        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
-        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
-        <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
-        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
-        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
-        <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
-        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
-        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
-        <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="Resources\drawable\" />
-    </ItemGroup>
-    <ItemGroup>
-        <PackageReference Include="Tonestro.Droid.Kotlin.Parcelize.Runtime" Version="1.7.21.6" />
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />-->
+<!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />-->
+<!--        <PackageReference Include="Xamarin.Google.Android.Material">-->
+<!--            <Version>1.10.0.3</Version>-->
+<!--        </PackageReference>-->
         <PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
-        <PackageReference Include="Xamarin.Google.Android.Material">
-            <Version>1.10.0.3</Version>
-        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Xamarin.RevenueCat.Android\Xamarin.RevenueCat.Android.csproj">
-            <Project>{A26721E7-6AE6-41C5-BC3B-C922C3840B8D}</Project>
+            <Project>{a26721e7-6ae6-41c5-bc3b-c922c3840b8d}</Project>
             <Name>Xamarin.RevenueCat.Android</Name>
         </ProjectReference>
-        <ProjectReference Include="..\Xamarin.RevenueCat.Android.Extensions\Xamarin.RevenueCat.Android.Extensions.csproj">
-            <Project>{FA4AC6AA-946D-4991-B546-43DDD9811B7A}</Project>
-            <Name>Xamarin.RevenueCat.Android.Extensions</Name>
+        <ProjectReference Include="..\Xamarin.RevenueCatUI.Android\Xamarin.RevenueCatUI.Android.csproj">
+            <Project>{bc6a0890-86f5-496b-b806-9864bdabc77f}</Project>
+            <Name>Xamarin.RevenueCatUI.Android</Name>
         </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-    Other similar extension points exist, see Microsoft.Common.targets.
-    <Target Name="BeforeBuild">
-    </Target>
-    <Target Name="AfterBuild">
-    </Target>
-  -->
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
 </Project>

@@ -9,35 +9,35 @@ namespace Xamarin.RevenueCat.Android.UsageChecker.UITests
     [TestFixture]
     public class Tests
     {
-        private AndroidApp app;
+        private AndroidApp _app;
 
         [SetUp]
         public void BeforeEachTest()
         {
-            app = ConfigureApp.Android.StartApp();
+            _app = ConfigureApp.Android.StartApp();
         }
 
         [Test]
         public void AppDidLaunch()
         {
-            app.WaitForElement(c => c.Id("content"));
-            app.Screenshot("App launched");
+            _app.WaitForElement(c => c.Id("content"));
+            _app.Screenshot("App launched");
         }
 
         [Test]
         public void CheckRevenueCatVersion()
         {
-            AppResult versionElement = app.WaitForElement(c => c.Id("txtRevenueCatVersion")).First();
-            Assert.AreEqual("RevenueCat 7.0.1", versionElement.Text);
-            app.Screenshot("RevenueCat Version");
+            AppResult versionElement = _app.WaitForElement(c => c.Id("txtRevenueCatVersion")).First();
+            Assert.Equals(versionElement.Text, Is.EqualTo("RevenueCat 7.7.2"));
+            _app.Screenshot("RevenueCat Version");
         }
 
         [Test]
         public void CheckAdjustNetworkAttribution()
         {
-            AppResult txtAdjustNetworkElement = app.WaitForElement(c => c.Id("txtAdjustNetwork")).First();
-            Assert.AreEqual("$adjustId", txtAdjustNetworkElement.Text);
-            app.Screenshot("Adjust Attribution Network");
+            AppResult txtAdjustNetworkElement = _app.WaitForElement(c => c.Id("txtAdjustNetwork")).First();
+            Assert.Equals(txtAdjustNetworkElement.Text, Is.EqualTo("$adjustId"));
+            _app.Screenshot("Adjust Attribution Network");
         }
     }
 }

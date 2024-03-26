@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <PackageId>Xamarin.RevenueCatUI.Android</PackageId>
+        <Version>7.7.2.1</Version>
+        <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
+        <Authors>Christian Kapplmüller, Albilaga</Authors>
+        <Company>fun.music IT GmbH</Company>
+        <PackageOutputPath>nugetoutput</PackageOutputPath>
+        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProductVersion>8.0.30703</ProductVersion>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{BC6A0890-86F5-496B-B806-9864BDABC77F}</ProjectGuid>
+        <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Xamarin.RevenueCatUI.Android</RootNamespace>
+        <AssemblyName>Xamarin.RevenueCatUI.Android</AssemblyName>
+        <FileAlignment>512</FileAlignment>
+        <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+        <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
+        <AndroidClassParser>class-parse</AndroidClassParser>
+        <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+        <AndroidXIsUsingAndroidXLibraries>true</AndroidXIsUsingAndroidXLibraries>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Mono.Android" />
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="IPaywallResultHandler.cs" />
+        <Compile Include="PaywallActivityLauncher.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <TransformFile Include="Transforms\Metadata.xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.9.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Tonestro.Droid.Kotlin.Parcelize.Runtime" Version="1.7.21.6" />
+        <PackageReference Include="Xamarin.AndroidX.Activity.Compose" Version="1.7.2.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.Material3" Version="1.1.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Graphics" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Text" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Tooling.Preview" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Compose.UI.Util" Version="1.4.3.2" />
+        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.6.1.2" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Startup.StartupRuntime" Version="1.1.1.2" />
+        <PackageReference Include="Xamarin.AndroidX.Window" Version="1.1.0.3" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="1.7.21" />
+        <!--        this should be 2.4.0. check first if we really need to bind ourselves then because minimum is 2.5.0 from nuget-->
+        <!--        <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Compose" Version="2.5.0" />-->
+        <!--        this should be 2.4.0. check first then decide if we need to bind ourselves-->
+        <!--        <PackageReference Include="Binding.Io.CoilKt.CoilCompose" Version="2.0.0" />-->
+        <!--        Check also if we need to bind androidx.window.core with version 1.1.0 by ourselves also-->
+        <!--        Check also if we need to bind io.coil-kt.coilsvg with version 2.40 by ourselves also-->
+        <!--        Check also if we need to bind org.commonmark with version 0.21.0 by ourselves also-->
+        <!--        Check also if we need to bind org.commonmark.ext-gfm-strikethrough with version 0.21.0 by ourselves also-->
+    </ItemGroup>
+    <ItemGroup>
+        <LibraryProjectZip Include="Jars\purchases-ui-7.7.2.aar" />
+    </ItemGroup>
+    <ItemGroup>
+        <JavaSourceJar Include="Jars\purchases-ui-7.7.2-sources.jar" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Xamarin.RevenueCat.Android\Xamarin.RevenueCat.Android.csproj">
+            <Project>{a26721e7-6ae6-41c5-bc3b-c922c3840b8d}</Project>
+            <Name>Xamarin.RevenueCat.Android</Name>
+        </ProjectReference>
+    </ItemGroup>
+
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>
