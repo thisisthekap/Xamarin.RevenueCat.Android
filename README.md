@@ -2,6 +2,10 @@
 
 Xamarin.Android Bindings for RevenueCat ([Website](https://www.revenuecat.com/), [MVN](https://mvnrepository.com/artifact/com.revenuecat.purchases/purchases)).
 
+## About this Repository
+
+This repository is not going to support newer versions of the RevenueCat SDK. For newer versions of the SDK, and support for .NET 8 iOS (MAUI), please see https://github.com/thisisthekap/Tonestro.Maui.RevenueCat.Android.
+
 ## NuGet Feed
 
 ### Xamarin.RevenueCat.Android
